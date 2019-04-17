@@ -29,4 +29,11 @@ siteCustom:
             - main.css
         js:
             - main.js
+    golang.org:
+        css:
+            - style.css
+        js:
+            - jquery.min.js
+            - playground.js
+            - godocs.js
 ...

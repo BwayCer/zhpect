@@ -2,5 +2,9 @@
     {
         "sitename": "https://bwaycer.github.io/telegram_api.zh.booklet/bots/api/",
         "briefly": "內容擷取於 <a href=\"https://core.telegram.org/api\">Telegram 官網</a>。"
+    },
+    {
+        "sitename": "golang.org",
+        "briefly": "內容擷取於 <a href=\"https://golang.org\">Golang 官網</a>。"
     }
 ]
