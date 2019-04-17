@@ -1,0 +1,20 @@
+{{- $dataAssets := .Site.Data.assets }}
+{{- $defaultPath := $dataAssets.defaultPath.js }}
+
+{{- with $dataAssets.siteShare.js }}
+    {{- $.Scratch.Add "importJSList" . }}
+{{- else }}
+    {{- $.Scratch.Set "importJSList" (slice) }}
+{{- end }}
+
+{{- $section := $.Scratch.Get "assetSection" }}
+{{- $sectionAsset := index $dataAssets.siteCustom $section }}
+{{- $section := add ($.Scratch.Get "assetSection") "/" }}
+{{- range $sectionAsset.js }}
+    {{- $.Scratch.Add "importJSList" (add $section .) }}
+{{- end }}
+
+{{- range $.Scratch.Get "importJSList" }}
+    <script defer src="{{ $defaultPath }}{{ . }}"></script>
+{{- end -}}
+

@@ -1,0 +1,41 @@
+---
+## 網站資訊
+
+baseURL       : https://bwaycer.github.io/zhpect/
+languageCode  : zh
+title         : 中文期望
+
+
+## 開發設定值
+
+newContentEditor   : vim
+metaDataFormat     : yaml
+disableLiveReload  : false
+verbose            : true
+
+
+## 開發設定值 - 資料結構
+
+archetypeDir  : archetypes
+contentDir    : content
+dataDir       : data
+layoutDir     : layouts
+staticDir     : static
+themesDir     : themes
+publishDir    : public
+
+
+## 開發設定值 - 生成文檔
+
+defaultContentLanguage                : zh
+defaultContentLanguageInSubdir        : false
+enableMissingTranslationPlaceholders  : false
+
+relativeURLs : true
+
+
+## 主題預設值
+
+params:
+    isDeveloper  : true
+...

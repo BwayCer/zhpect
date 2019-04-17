@@ -1,0 +1,11 @@
+
+{{- with $.Scratch.Get "siteTitle" -}}
+    <title>{{ . }}</title>
+{{- else -}}
+    {{- if and .Title (ne .IsHome true) -}}
+        {{ $.Scratch.Set "siteTitle" (add .Title " - ")}}
+    {{- end }}
+
+    <title>{{ $.Scratch.Get "siteTitle" }}{{ .Site.Title }}</title>
+{{- end -}}
+

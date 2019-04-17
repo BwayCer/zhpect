@@ -1,0 +1,17 @@
+{{- $dirPath := .Site.Data.assets.defaultPath.favicon }}
+
+{{- with .Site.Data.assets.favicon }}
+    {{- if .ico }}
+        <link rel="icon" href="{{ add $dirPath .ico }}" type="image/x-icon" sizes="128x128" />
+    {{- end }}
+    {{- if .png }}
+        <link rel="icon" href="{{ add $dirPath .png }}" type="image/png" sizes="128x128" />
+        <link rel="apple-touch-icon-precomposed" href='{{ add $dirPath .png }}' sizes="128x128" />
+    {{- end -}}
+
+    <!--
+        <meta name="msapplication-TileColor" content="#FAFAFA">
+        <meta name="msapplication-TileImage" content="/favicon/mstile$favVer.png">
+    -->
+{{- end -}}
+
