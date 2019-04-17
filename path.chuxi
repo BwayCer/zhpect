@@ -4,8 +4,9 @@
 /lib/godoc/jquery.js
 /lib/godoc/playground.js
 /lib/godoc/godocs.js
-/doc/share.png
 /doc/gopher/frontpage.png
+/doc/gopher/pkg.png
 /
+/pkg/
 /pkg/text/template/
 
