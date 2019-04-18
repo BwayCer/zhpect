@@ -44,7 +44,7 @@ void async function (getZhpectInfo, createSettingBtn, setEventHandle) {
 
             if (!zhpectInfoPath) {
                 let currentPath = location.pathname.replace(/(\.\w+)?\/*$/, '');
-                zhpectInfoPath = currentPath === '' ? '/' : currentPath + '.zhpect.json'
+                zhpectInfoPath = (currentPath === '' ? '/index' : currentPath) + '.zhpect.json';
             }
 
             let err;
@@ -232,18 +232,46 @@ void async function (getZhpectInfo, createSettingBtn, setEventHandle) {
         return [helSetting, helMainBtn, helToolBtn];
     },
     function setEventHandle(zhpectInfo, [helSetting, helMainBtn, helToolBtn]) {
-        let rectSightList = [];
-        Array.from(document.querySelectorAll('[data-zhpect-trans]'))
-            .forEach(function (helItem) {
-                rectSightList.push(new RectSight(helItem));
-            })
-        ;
+        function getZhpectHelList() {
+            let qsSign = 'zhpect[data-trans], [data-zhpect-trans]';
+            return Array.from(document.querySelectorAll(qsSign));
+        }
+        function getZhpectTrans(target) {
+            return target.tagName === 'ZHPECT'
+                ? target.dataset.trans
+                : target.dataset.zhpectTrans
+            ;
+        }
 
         let originalTextFieldName = 'origin';
         let originTranslationInfo = zhpectInfo[originalTextFieldName];
         if (!originTranslationInfo || originTranslationInfo.constructor !== Object) {
             zhpectInfo[originalTextFieldName] = {};
         }
+
+        if (zhpectInfo.autoCollectOrigin === true) {
+            getZhpectHelList().forEach(function (target) {
+                let zhpectTrans = getZhpectTrans(target);
+                if (!zhpectTrans) {
+                    return;
+                }
+                if (!zhpectInfo[originalTextFieldName].hasOwnProperty(zhpectTrans)) {
+                    zhpectInfo[originalTextFieldName][zhpectTrans]
+                        = target.innerHTML.trim().replace(/\n/g, ' ').replace(/ +/g, ' ');
+                    target.innerHTML = '-- 完成戳印 --';
+                } else {
+                    target.innerHTML = '-- 完成戳印 (複用) --';
+                }
+            });
+            console.log(JSON.stringify(zhpectInfo[originalTextFieldName], null, 4));
+            console.log(zhpectInfo[originalTextFieldName]);
+            return;
+        }
+
+        let rectSightList = [];
+        getZhpectHelList().forEach(function (helItem) {
+            rectSightList.push(new RectSight(helItem));
+        });
 
         function zhpectHandle() {
             let zhpectInfo = zhpectHandle._zhpectInfo;
@@ -264,17 +292,17 @@ void async function (getZhpectInfo, createSettingBtn, setEventHandle) {
                     return;
                 }
 
-                let zhpectTrans = target.dataset.zhpectTrans;
+                let zhpectTrans = getZhpectTrans(target);
                 let translationTxt = translationInfo[zhpectTrans];
                 if (typeof translationTxt !== 'string') {
                     return;
                 }
                 if (!zhpectInfo[originalTextFieldName].hasOwnProperty(zhpectTrans)) {
-                    zhpectInfo[originalTextFieldName][zhpectTrans] = target.textContent;
+                    zhpectInfo[originalTextFieldName][zhpectTrans] = target.innerHTML;
                 }
 
                 target.dataset.zhpectLang = useLangArea;
-                target.textContent = translationTxt;
+                target.innerHTML = translationTxt;
             });
         }
         zhpectHandle._zhpectInfo = zhpectInfo;

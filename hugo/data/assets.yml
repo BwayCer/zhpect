@@ -15,8 +15,7 @@ noscriptCSS: ~
 
 # 全站共享
 siteShare:
-    css:
-        - reset.css
+    css: ~
     js:
         - zhpect/RectSight.js
         - zhpect/zhpect.js
@@ -26,6 +25,7 @@ siteShare:
 siteCustom:
     home:
         css:
+            - reset.css
             - main.css
         js:
             - main.js
@@ -36,4 +36,12 @@ siteCustom:
             - jquery.min.js
             - playground.js
             - godocs.js
+    godoc.org:
+        css:
+            - bootstrap.min.css
+            - site.css
+        js:
+            - jquery-2.0.3.min.js
+            - bootstrap.min.js
+            - site.js
 ...
