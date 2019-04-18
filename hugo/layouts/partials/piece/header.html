@@ -11,6 +11,13 @@
 
         {{ partial "base/importCSS" . }}
         {{ partial "base/importJS.html" . }}
+
+        {{- $section := $.Scratch.Get "assetSection" }}
+        {{- $sectionHeadTagImportPath := (printf "%s/headTag.html" $section) }}
+        {{- $sectionHeadTagPath := (printf "layouts/partials/%s" $sectionHeadTagImportPath) }}
+        {{- if (fileExists $sectionHeadTagPath) }}
+            {{ partial $sectionHeadTagImportPath . }}
+        {{- end }}
     </head>
     <body>
 
