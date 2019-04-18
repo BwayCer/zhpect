@@ -16,6 +16,7 @@
 /-/jquery-2.0.3.min.js
 /-/bootstrap.min.js
 /-/site.js
+/github.com/gorilla/websocket/
 /golang.org/x/net/
 /golang.org/x/net/websocket/
 
