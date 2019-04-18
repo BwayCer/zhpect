@@ -1,10 +1,6 @@
 {{- $.Scratch.Set "siteTitle" .Title }}
 
-{{- with .Params.assetSection }}
-    {{- $.Scratch.Set "assetSection" . }}
-{{- else }}
-    {{- $.Scratch.Set "assetSection" "godoc" }}
-{{- end }}
+{{- $.Scratch.Set "assetSection" "home" }}
 
 
 {{- partial "piece/header" . }}
