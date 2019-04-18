@@ -1,0 +1,9 @@
+{{- $.Scratch.Set "siteTitle" .Title }}
+
+{{- $.Scratch.Set "assetSection" "home" }}
+
+
+{{- partial "piece/header" . }}
+    {{ .Content }}
+{{ partial "piece/footer" . -}}
+

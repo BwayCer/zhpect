@@ -1,0 +1,39 @@
+---
+defaultPath:
+    favicon      : /assets/favicon/
+    noscriptCSS  : /assets/css/
+    css          : /assets/css/
+    js           : /js/
+
+# 網站圖標
+favicon:
+    ico: s128.ico
+    png: s128.png
+
+# 禁用腳本下的樣式
+noscriptCSS: ~
+
+# 全站共享
+siteShare:
+    css:
+        - reset.css
+    js:
+        - zhpect/RectSight.js
+        - zhpect/zhpect.js
+        - zhpect/EventIntervalManager.js
+
+# 客制化個別網站
+siteCustom:
+    home:
+        css:
+            - main.css
+        js:
+            - main.js
+    golang.org:
+        css:
+            - style.css
+        js:
+            - jquery.min.js
+            - playground.js
+            - godocs.js
+...

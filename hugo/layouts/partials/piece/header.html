@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        {{ partial "base/title" . }}
+
+        <meta charset="utf-8" />
+        {{ partial "base/favicon" . }}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {{ partial "base/meta" . }}
+
+        {{ partial "base/importCSS" . }}
+        {{ partial "base/importJS.html" . }}
+
+        {{- $section := $.Scratch.Get "assetSection" }}
+        {{- $sectionHeadTagImportPath := (printf "%s/headTag.html" $section) }}
+        {{- $sectionHeadTagPath := (printf "layouts/partials/%s" $sectionHeadTagImportPath) }}
+        {{- if (fileExists $sectionHeadTagPath) }}
+            {{ partial $sectionHeadTagImportPath . }}
+        {{- end }}
+    </head>
+    <body>
+

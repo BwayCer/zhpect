@@ -1,0 +1,21 @@
+{{- $.Scratch.Set "siteTitle" .Title }}
+
+{{- with .Params.assetSection }}
+    {{- $.Scratch.Set "assetSection" . }}
+{{- else }}
+    {{- $.Scratch.Set "assetSection" "golang.org" }}
+{{- end }}
+
+
+{{- partial "piece/header" . }}
+    {{- partial "golang.org/navbar" . }}
+
+    <div id="page" class="wide">
+        <div class="container">
+            {{ .Content }}
+
+            {{ partial "golang.org/footerSign.html" . }}
+        </div>
+    </div>
+{{ partial "piece/footer" . -}}
+
