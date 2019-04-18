@@ -10,3 +10,12 @@
 /pkg/
 /pkg/text/template/
 
+-> https godoc.org
+/-/bootstrap.min.css
+/-/site.css
+/-/jquery-2.0.3.min.js
+/-/bootstrap.min.js
+/-/site.js
+/golang.org/x/net/
+/golang.org/x/net/websocket/
+
