@@ -15,8 +15,7 @@ noscriptCSS: ~
 
 # 全站共享
 siteShare:
-    css:
-        - reset.css
+    css: ~
     js:
         - zhpect/RectSight.js
         - zhpect/zhpect.js
@@ -26,6 +25,7 @@ siteShare:
 siteCustom:
     home:
         css:
+            - reset.css
             - main.css
         js:
             - main.js
