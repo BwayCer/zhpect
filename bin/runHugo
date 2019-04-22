@@ -1,0 +1,77 @@
+#!/bin/bash
+# 運行雨果服務器
+
+
+##shStyle ###
+
+
+__filename=`realpath "$0"`
+[ -L "$0" ] && exec "$__filename" "$@"
+_dirsh=`dirname "$__filename"`
+_fileName=`basename "$__filename"`
+
+
+##shStyle ###
+
+
+# 運行雨果服務器
+# [[USAGE]] [hugo 的選項或命令參數 ...]
+# [[OPT]]
+#   -p, --port <int>   服務器的監聽埠。 預設為 "1313"。
+
+fnRunHugo() {
+    local opt_port="1313"
+
+    while [ -n "y" ]
+    do
+        case "$1" in
+            -p | --port )
+                [ -z "$2" ] && shift && continue
+
+                [ -d "$2" ] && opt_port=$2
+                shift 2
+                ;;
+            * ) break ;;
+        esac
+    done
+
+    if [[ ! "$opt_port" =~ ^[0-9]+$ ]]; then
+        opt_port="1313"
+    fi
+
+    local args=("$@")
+
+    local mainDir=`realpath "$_dirsh/.."`
+    local hugoDir="$mainDir/hugo"
+
+    if [ ! -d "$hugoDir" ]; then
+        echo "[$_fileName]: 找不到 \"$hugoDir\" 目錄。" >&2
+        exit 1
+    fi
+
+    local dirName=`basename "$mainDir"`
+    local inet=`
+        ip -4 a |
+            grep -A 1 "state UP" |
+            grep -o "\([0-9]\{,3\}\.\)\{3\}[0-9]\{,3\}" |
+            sed -n "1p"
+    `
+    local cmdList=("hugo" "server")
+
+    [ "$opt_port" != "1313" ] &&
+        cmdList+=("--port" "$opt_port")
+    cmdList+=("--baseURL" "http://$inet:$opt_port/$dirName")
+    cmdList+=("--bind" "0.0.0.0")
+
+    for key in "${args[@]}"
+    do
+        cmdList+=("$key")
+    done
+
+    cd "$mainDir/hugo"
+    echo "\$ ${cmdList[@]}<ENTER>"
+    exec "${cmdList[@]}"
+}
+
+fnRunHugo "$@"
+

@@ -1,0 +1,22 @@
+#!/bin/bash
+# zhpect 的 git worktree
+
+
+##shStyle ###
+
+
+__filename=`realpath "$0"`
+[ -L "$0" ] && exec "$__filename" "$@"
+_dirsh=`dirname "$__filename"`
+
+
+##shStyle ###
+
+
+mainDir=`realpath "$_dirsh/.."`
+cd "$mainDir"
+
+git worktree add chuxi chuxi
+git worktree add ghpages gh-pages
+git worktree add zhpect zhpect
+
