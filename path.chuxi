@@ -8,6 +8,8 @@
 /doc/gopher/pkg.png
 /
 /pkg/
+/pkg/builtin/
+/pkg/regexp/
 /pkg/text/template/
 
 -> https godoc.org
