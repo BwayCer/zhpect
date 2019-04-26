@@ -300,7 +300,7 @@ websocket.Message.Send(ws, data)
 </h3>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/hybi.go#L539">❖</a>
-    <pre>func Origin(config *<a href="#Config">Config</a>, req *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>) (*<a href="//godoc.org/net/url">url</a>.<a href="//godoc.org/net/url#URL">URL</a>, <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func Origin(config *<a href="#Config">Config</a>, req *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>) (*<a href="//godoc.org/net/url">url</a>.<a href="//godoc.org/net/url#URL">URL</a>, <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="BdQ94n2">Origin parses the Origin header in req.
 If the Origin header is not set, it returns nil and nil.
@@ -325,7 +325,7 @@ If the Origin header is not set, it returns nil and nil.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L79">❖</a>
-    <pre>func (addr *<a href="#Addr">Addr</a>) Network() <a href="//godoc.org/builtin#string">string</a></pre>
+    <pre>func (addr *<a href="#Addr">Addr</a>) Network() <a href="/golang.org/pkg/builtin#string">string</a></pre>
 </div>
 <p data-zhpect-trans="3UVdv6z">Network returns the network type for a WebSocket, &#34;websocket &#34;.
 </p>
@@ -337,8 +337,8 @@ If the Origin header is not set, it returns nil and nil.
 <div class="decl" data-kind="d">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L302">❖</a>
     <pre>type Codec struct {
-    <span id="Codec.Marshal">Marshal</span>   func(v interface{}) (data []<a href="//godoc.org/builtin#byte">byte</a>, payloadType <a href="//godoc.org/builtin#byte">byte</a>, err <a href="//godoc.org/builtin#error">error</a>)
-    <span id="Codec.Unmarshal">Unmarshal</span> func(data []<a href="//godoc.org/builtin#byte">byte</a>, payloadType <a href="//godoc.org/builtin#byte">byte</a>, v interface{}) (err <a href="//godoc.org/builtin#error">error</a>)
+    <span id="Codec.Marshal">Marshal</span>   func(v interface{}) (data []<a href="/golang.org/pkg/builtin#byte">byte</a>, payloadType <a href="/golang.org/pkg/builtin#byte">byte</a>, err <a href="/golang.org/pkg/builtin#error">error</a>)
+    <span id="Codec.Unmarshal">Unmarshal</span> func(data []<a href="/golang.org/pkg/builtin#byte">byte</a>, payloadType <a href="/golang.org/pkg/builtin#byte">byte</a>, v interface{}) (err <a href="/golang.org/pkg/builtin#error">error</a>)
 }</pre>
 </div>
 <p data-zhpect-trans="He6EYSe">Codec represents a symmetric pair of functions that implement a codec.
@@ -350,7 +350,7 @@ If the Origin header is not set, it returns nil and nil.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L330">❖</a>
-    <pre>func (cd <a href="#Codec">Codec</a>) Receive(ws *<a href="#Conn">Conn</a>, v interface{}) (err <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func (cd <a href="#Codec">Codec</a>) Receive(ws *<a href="#Conn">Conn</a>, v interface{}) (err <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="g9Asxj9">Receive receives single frame from ws, unmarshaled by cd.Unmarshal and stores
 in v. The whole frame payload is read to an in-memory buffer; max size of
@@ -366,7 +366,7 @@ previous oversized frame before processing next frame.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L308">❖</a>
-    <pre>func (cd <a href="#Codec">Codec</a>) Send(ws *<a href="#Conn">Conn</a>, v interface{}) (err <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func (cd <a href="#Codec">Codec</a>) Send(ws *<a href="#Conn">Conn</a>, v interface{}) (err <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="fRetayG">Send sends v marshaled by cd.Marshal as single frame to ws.
 </p>
@@ -385,10 +385,10 @@ previous oversized frame before processing next frame.
     <span id="Config.Origin">Origin</span> *<a href="//godoc.org/net/url">url</a>.<a href="//godoc.org/net/url#URL">URL</a>
 
     <span class="com">// WebSocket subprotocols.</span>
-    <span id="Config.Protocol">Protocol</span> []<a href="//godoc.org/builtin#string">string</a>
+    <span id="Config.Protocol">Protocol</span> []<a href="/golang.org/pkg/builtin#string">string</a>
 
     <span class="com">// WebSocket protocol version.</span>
-    <span id="Config.Version">Version</span> <a href="//godoc.org/builtin#int">int</a>
+    <span id="Config.Version">Version</span> <a href="/golang.org/pkg/builtin#int">int</a>
 
     <span class="com">// TLS config for secure WebSocket (wss).</span>
     <span id="Config.TlsConfig">TlsConfig</span> *<a href="//godoc.org/crypto/tls">tls</a>.<a href="//godoc.org/crypto/tls#Config">Config</a>
@@ -410,7 +410,7 @@ previous oversized frame before processing next frame.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/client.go#L26">❖</a>
-    <pre>func NewConfig(server, origin <a href="//godoc.org/builtin#string">string</a>) (config *<a href="#Config">Config</a>, err <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func NewConfig(server, origin <a href="/golang.org/pkg/builtin#string">string</a>) (config *<a href="#Config">Config</a>, err <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="9jwWYNf">NewConfig creates a new WebSocket config for client connection.
 </p>
@@ -422,11 +422,11 @@ previous oversized frame before processing next frame.
 <div class="decl" data-kind="d">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L164">❖</a>
     <pre>type Conn struct {
-    <span id="Conn.PayloadType">PayloadType</span> <a href="//godoc.org/builtin#byte">byte</a>
+    <span id="Conn.PayloadType">PayloadType</span> <a href="/golang.org/pkg/builtin#byte">byte</a>
 
     <span class="com">// MaxPayloadBytes limits the size of frame payload received over Conn
     // by Codec&#39;s Receive method. If zero, DefaultMaxPayloadBytes is used.</span>
-    <span id="Conn.MaxPayloadBytes">MaxPayloadBytes</span> <a href="//godoc.org/builtin#int">int</a>
+    <span id="Conn.MaxPayloadBytes">MaxPayloadBytes</span> <a href="/golang.org/pkg/builtin#int">int</a>
     <span class="com">// contains filtered or unexported fields</span>
 }</pre>
 </div>
@@ -441,7 +441,7 @@ previous oversized frame before processing next frame.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/client.go#L55">❖</a>
-    <pre>func Dial(url_, protocol, origin <a href="//godoc.org/builtin#string">string</a>) (ws *<a href="#Conn">Conn</a>, err <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func Dial(url_, protocol, origin <a href="/golang.org/pkg/builtin#string">string</a>) (ws *<a href="#Conn">Conn</a>, err <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="RBqkHRj">Dial opens a new client connection to a WebSocket.
 </p>
@@ -483,7 +483,7 @@ fmt.Printf(&#34;Received: %s.\n&#34;, msg[:n])
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/client.go#L81">❖</a>
-    <pre>func DialConfig(config *<a href="#Config">Config</a>) (ws *<a href="#Conn">Conn</a>, err <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func DialConfig(config *<a href="#Config">Config</a>) (ws *<a href="#Conn">Conn</a>, err <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="bgsRVCt">DialConfig opens a new client connection to a WebSocket with a config.
 </p>
@@ -494,7 +494,7 @@ fmt.Printf(&#34;Received: %s.\n&#34;, msg[:n])
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/client.go#L42">❖</a>
-    <pre>func NewClient(config *<a href="#Config">Config</a>, rwc <a href="//godoc.org/io">io</a>.<a href="//godoc.org/io#ReadWriteCloser">ReadWriteCloser</a>) (ws *<a href="#Conn">Conn</a>, err <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func NewClient(config *<a href="#Config">Config</a>, rwc <a href="//godoc.org/io">io</a>.<a href="//godoc.org/io#ReadWriteCloser">ReadWriteCloser</a>) (ws *<a href="#Conn">Conn</a>, err <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="xp5Z3qK">NewClient creates a new WebSocket client connection over rwc.
 </p>
@@ -505,7 +505,7 @@ fmt.Printf(&#34;Received: %s.\n&#34;, msg[:n])
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L235">❖</a>
-    <pre>func (ws *<a href="#Conn">Conn</a>) Close() <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (ws *<a href="#Conn">Conn</a>) Close() <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="eKxHreC">Close implements the io.Closer interface.
 </p>
@@ -527,7 +527,7 @@ fmt.Printf(&#34;Received: %s.\n&#34;, msg[:n])
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L245">❖</a>
-    <pre>func (ws *<a href="#Conn">Conn</a>) IsClientConn() <a href="//godoc.org/builtin#bool">bool</a></pre>
+    <pre>func (ws *<a href="#Conn">Conn</a>) IsClientConn() <a href="/golang.org/pkg/builtin#bool">bool</a></pre>
 </div>
 <p data-zhpect-trans="SX8RDTk">IsClientConn reports whether ws is a client-side connection.
 </p>
@@ -538,7 +538,7 @@ fmt.Printf(&#34;Received: %s.\n&#34;, msg[:n])
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L248">❖</a>
-    <pre>func (ws *<a href="#Conn">Conn</a>) IsServerConn() <a href="//godoc.org/builtin#bool">bool</a></pre>
+    <pre>func (ws *<a href="#Conn">Conn</a>) IsServerConn() <a href="/golang.org/pkg/builtin#bool">bool</a></pre>
 </div>
 <p data-zhpect-trans="rBmttZM">IsServerConn reports whether ws is a server-side connection.
 </p>
@@ -561,7 +561,7 @@ the WebSocket location for server.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L192">❖</a>
-    <pre>func (ws *<a href="#Conn">Conn</a>) Read(msg []<a href="//godoc.org/builtin#byte">byte</a>) (n <a href="//godoc.org/builtin#int">int</a>, err <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func (ws *<a href="#Conn">Conn</a>) Read(msg []<a href="/golang.org/pkg/builtin#byte">byte</a>) (n <a href="/golang.org/pkg/builtin#int">int</a>, err <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="tYmsJUL">Read implements the io.Reader interface:
 it reads data of a frame from the WebSocket connection.
@@ -600,7 +600,7 @@ It is nil for client side.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L271">❖</a>
-    <pre>func (ws *<a href="#Conn">Conn</a>) SetDeadline(t <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (ws *<a href="#Conn">Conn</a>) SetDeadline(t <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="6wmaVPs">SetDeadline sets the connection &#39;s network read &amp;write deadlines.
 </p>
@@ -611,7 +611,7 @@ It is nil for client side.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L279">❖</a>
-    <pre>func (ws *<a href="#Conn">Conn</a>) SetReadDeadline(t <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (ws *<a href="#Conn">Conn</a>) SetReadDeadline(t <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="UMt2MkA">SetReadDeadline sets the connection &#39;s network read deadline.
 </p>
@@ -622,7 +622,7 @@ It is nil for client side.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L287">❖</a>
-    <pre>func (ws *<a href="#Conn">Conn</a>) SetWriteDeadline(t <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (ws *<a href="#Conn">Conn</a>) SetWriteDeadline(t <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="druzGZC">SetWriteDeadline sets the connection &#39;s network write deadline.
 </p>
@@ -633,7 +633,7 @@ It is nil for client side.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L222">❖</a>
-    <pre>func (ws *<a href="#Conn">Conn</a>) Write(msg []<a href="//godoc.org/builtin#byte">byte</a>) (n <a href="//godoc.org/builtin#int">int</a>, err <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func (ws *<a href="#Conn">Conn</a>) Write(msg []<a href="/golang.org/pkg/builtin#byte">byte</a>) (n <a href="/golang.org/pkg/builtin#int">int</a>, err <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="str9xgJ">Write implements the io.Writer interface:
 it writes data as a frame to the WebSocket connection.
@@ -647,7 +647,7 @@ it writes data as a frame to the WebSocket connection.
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/client.go#L16">❖</a>
     <pre>type DialError struct {
     *<a href="#Config">Config</a>
-    <span id="DialError.Err">Err</span> <a href="//godoc.org/builtin#error">error</a>
+    <span id="DialError.Err">Err</span> <a href="/golang.org/pkg/builtin#error">error</a>
 }</pre>
 </div>
 <p data-zhpect-trans="WzXfRvq">DialError is an error that occurs while dialling a websocket server.
@@ -659,7 +659,7 @@ it writes data as a frame to the WebSocket connection.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/client.go#L21">❖</a>
-    <pre>func (e *<a href="#DialError">DialError</a>) Error() <a href="//godoc.org/builtin#string">string</a></pre>
+    <pre>func (e *<a href="#DialError">DialError</a>) Error() <a href="/golang.org/pkg/builtin#string">string</a></pre>
 </div>
 <h3 id="Handler" data-kind="t">
     type <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/server.go#L99">Handler</a>
@@ -734,7 +734,7 @@ func main() {
 <div class="decl" data-kind="d">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L46">❖</a>
     <pre>type ProtocolError struct {
-    <span id="ProtocolError.ErrorString">ErrorString</span> <a href="//godoc.org/builtin#string">string</a>
+    <span id="ProtocolError.ErrorString">ErrorString</span> <a href="/golang.org/pkg/builtin#string">string</a>
 }</pre>
 </div>
 <p data-zhpect-trans="mgrk9sU">ProtocolError represents WebSocket protocol errors.
@@ -746,7 +746,7 @@ func main() {
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/websocket.go#L50">❖</a>
-    <pre>func (err *<a href="#ProtocolError">ProtocolError</a>) Error() <a href="//godoc.org/builtin#string">string</a></pre>
+    <pre>func (err *<a href="#ProtocolError">ProtocolError</a>) Error() <a href="/golang.org/pkg/builtin#string">string</a></pre>
 </div>
 <h3 id="Server" data-kind="t">
     type <a title="View Source" href="https://github.com/golang/net/blob/master/websocket/server.go#L55">Server</a>
@@ -762,7 +762,7 @@ func main() {
     <span class="com">// Handshake is an optional function in WebSocket handshake.
     // For example, you can check, or don&#39;t check Origin header.
     // Another example, you can select config.Protocol.</span>
-    <span id="Server.Handshake">Handshake</span> func(*<a href="#Config">Config</a>, *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>) <a href="//godoc.org/builtin#error">error</a>
+    <span id="Server.Handshake">Handshake</span> func(*<a href="#Config">Config</a>, *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>) <a href="/golang.org/pkg/builtin#error">error</a>
 
     <span class="com">// Handler handles a WebSocket connection.</span>
     <a href="#Handler">Handler</a>

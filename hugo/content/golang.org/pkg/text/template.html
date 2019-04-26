@@ -681,7 +681,7 @@ if err != nil {
     <a href="/src/text/template/funcs.go?s=13987:14025#L515">HTMLEscape</a>
     <a class="permalink" href="#HTMLEscape">&#xb6;</a>
 </h2>
-<pre>func HTMLEscape(w <a href="/pkg/io/">io</a>.<a href="/pkg/io/#Writer">Writer</a>, b []<a href="/pkg/builtin/#byte">byte</a>)</pre>
+<pre>func HTMLEscape(w <a href="/pkg/io/">io</a>.<a href="/pkg/io/#Writer">Writer</a>, b []<a href="/golang.org/pkg/builtin/#byte">byte</a>)</pre>
 <p data-zhpect-trans="fXRmb8b">
     HTMLEscape writes to w the escaped HTML equivalent of the plain text data b.
 </p>
@@ -693,7 +693,7 @@ if err != nil {
     <a href="/src/text/template/funcs.go?s=14464:14502#L543">HTMLEscapeString</a>
     <a class="permalink" href="#HTMLEscapeString">&#xb6;</a>
 </h2>
-<pre>func HTMLEscapeString(s <a href="/pkg/builtin/#string">string</a>) <a href="/pkg/builtin/#string">string</a></pre>
+<pre>func HTMLEscapeString(s <a href="/golang.org/pkg/builtin/#string">string</a>) <a href="/golang.org/pkg/builtin/#string">string</a></pre>
 <p data-zhpect-trans="sTR8NGV">
     HTMLEscapeString returns the escaped HTML equivalent of the plain text data s.
 </p>
@@ -705,7 +705,7 @@ if err != nil {
     <a href="/src/text/template/funcs.go?s=14766:14810#L555">HTMLEscaper</a>
     <a class="permalink" href="#HTMLEscaper">&#xb6;</a>
 </h2>
-<pre>func HTMLEscaper(args ...interface{}) <a href="/pkg/builtin/#string">string</a></pre>
+<pre>func HTMLEscaper(args ...interface{}) <a href="/golang.org/pkg/builtin/#string">string</a></pre>
 <p data-zhpect-trans="zz655Pw">
     HTMLEscaper returns the escaped HTML equivalent of the textual representation of its arguments.
 </p>
@@ -717,7 +717,7 @@ if err != nil {
 
     <span title="Added in Go 1.6">1.6</span>
 </h2>
-<pre>func IsTrue(val interface{}) (truth, ok <a href="/pkg/builtin/#bool">bool</a>)</pre>
+<pre>func IsTrue(val interface{}) (truth, ok <a href="/golang.org/pkg/builtin/#bool">bool</a>)</pre>
 <p data-zhpect-trans="Jd7QT43">
 IsTrue reports whether the value is &#39;true&#39;, in the sense of not the zero of its type,
 and whether the value has a meaningful truth value. This is the definition of
@@ -731,7 +731,7 @@ truth used by if and other such actions.
 
 
 </h2>
-<pre>func JSEscape(w <a href="/pkg/io/">io</a>.<a href="/pkg/io/#Writer">Writer</a>, b []<a href="/pkg/builtin/#byte">byte</a>)</pre>
+<pre>func JSEscape(w <a href="/pkg/io/">io</a>.<a href="/pkg/io/#Writer">Writer</a>, b []<a href="/golang.org/pkg/builtin/#byte">byte</a>)</pre>
 <p data-zhpect-trans="sxNjpMv">
 JSEscape writes to w the escaped JavaScript equivalent of the plain text data b.
 </p>
@@ -747,7 +747,7 @@ JSEscape writes to w the escaped JavaScript equivalent of the plain text data b.
 
 
 </h2>
-<pre>func JSEscapeString(s <a href="/pkg/builtin/#string">string</a>) <a href="/pkg/builtin/#string">string</a></pre>
+<pre>func JSEscapeString(s <a href="/golang.org/pkg/builtin/#string">string</a>) <a href="/golang.org/pkg/builtin/#string">string</a></pre>
 <p data-zhpect-trans="FCbM845">
 JSEscapeString returns the escaped JavaScript equivalent of the plain text data s.
 </p>
@@ -763,7 +763,7 @@ JSEscapeString returns the escaped JavaScript equivalent of the plain text data 
 
 
 </h2>
-<pre>func JSEscaper(args ...interface{}) <a href="/pkg/builtin/#string">string</a></pre>
+<pre>func JSEscaper(args ...interface{}) <a href="/golang.org/pkg/builtin/#string">string</a></pre>
 <p data-zhpect-trans="gb73htd">
 JSEscaper returns the escaped JavaScript equivalent of the textual
 representation of its arguments.
@@ -780,7 +780,7 @@ representation of its arguments.
 
 
 </h2>
-<pre>func URLQueryEscaper(args ...interface{}) <a href="/pkg/builtin/#string">string</a></pre>
+<pre>func URLQueryEscaper(args ...interface{}) <a href="/golang.org/pkg/builtin/#string">string</a></pre>
 <p data-zhpect-trans="rwK8TJY">
 URLQueryEscaper returns the escaped value of the textual representation of
 its arguments in a form suitable for embedding in a URL query.
@@ -805,8 +805,8 @@ error is returned; it will not be of type ExecError.)
 </p>
 
 <pre>type ExecError struct {
-<span id="ExecError.Name"></span>        Name <a href="/pkg/builtin/#string">string</a> <span class="comment">// Name of template.</span>
-<span id="ExecError.Err"></span>        Err  <a href="/pkg/builtin/#error">error</a>  <span class="comment">// Pre-formatted error.</span>
+<span id="ExecError.Name"></span>        Name <a href="/golang.org/pkg/builtin/#string">string</a> <span class="comment">// Name of template.</span>
+<span id="ExecError.Err"></span>        Err  <a href="/golang.org/pkg/builtin/#error">error</a>  <span class="comment">// Pre-formatted error.</span>
 }
 </pre>
 
@@ -827,7 +827,7 @@ error is returned; it will not be of type ExecError.)
 
     <span title="Added in Go 1.6">1.6</span>
 </h3>
-<pre>func (e <a href="#ExecError">ExecError</a>) Error() <a href="/pkg/builtin/#string">string</a></pre>
+<pre>func (e <a href="#ExecError">ExecError</a>) Error() <a href="/golang.org/pkg/builtin/#string">string</a></pre>
 
 
 
@@ -856,7 +856,7 @@ of type reflect.Value. Similarly, functions meant to return a result of arbitrar
 type can return interface{} or reflect.Value.
 </p>
 
-<pre>type FuncMap map[<a href="/pkg/builtin/#string">string</a>]interface{}</pre>
+<pre>type FuncMap map[<a href="/golang.org/pkg/builtin/#string">string</a>]interface{}</pre>
 
 
 
@@ -1433,7 +1433,7 @@ T0 (first version) invokes T1: (T1 invokes T2: (T2, version A))
 
 
 </h3>
-<pre>func Must(t *<a href="#Template">Template</a>, err <a href="/pkg/builtin/#error">error</a>) *<a href="#Template">Template</a></pre>
+<pre>func Must(t *<a href="#Template">Template</a>, err <a href="/golang.org/pkg/builtin/#error">error</a>) *<a href="#Template">Template</a></pre>
 <p data-zhpect-trans="CzfKCTP">
 Must is a helper that wraps a call to a function returning (*Template, error)
 and panics if the error is non-nil. It is intended for use in variable
@@ -1451,7 +1451,7 @@ initializations such as
 
 
 </h3>
-<pre>func New(name <a href="/pkg/builtin/#string">string</a>) *<a href="#Template">Template</a></pre>
+<pre>func New(name <a href="/golang.org/pkg/builtin/#string">string</a>) *<a href="#Template">Template</a></pre>
 <p data-zhpect-trans="PQMwxFM">
 New allocates a new, undefined template with the given name.
 </p>
@@ -1465,7 +1465,7 @@ New allocates a new, undefined template with the given name.
 
 
 </h3>
-<pre>func ParseFiles(filenames ...<a href="/pkg/builtin/#string">string</a>) (*<a href="#Template">Template</a>, <a href="/pkg/builtin/#error">error</a>)</pre>
+<pre>func ParseFiles(filenames ...<a href="/golang.org/pkg/builtin/#string">string</a>) (*<a href="#Template">Template</a>, <a href="/golang.org/pkg/builtin/#error">error</a>)</pre>
 <p data-zhpect-trans="SFjUX93">
 ParseFiles creates a new Template and parses the template definitions from
 the named files. The returned template&#39;s name will have the base name and
@@ -1488,7 +1488,7 @@ named &#34;foo&#34;, while &#34;a/foo&#34; is unavailable.
 
 
 </h3>
-<pre>func ParseGlob(pattern <a href="/pkg/builtin/#string">string</a>) (*<a href="#Template">Template</a>, <a href="/pkg/builtin/#error">error</a>)</pre>
+<pre>func ParseGlob(pattern <a href="/golang.org/pkg/builtin/#string">string</a>) (*<a href="#Template">Template</a>, <a href="/golang.org/pkg/builtin/#error">error</a>)</pre>
 <p data-zhpect-trans="UtQdxck">
 ParseGlob creates a new Template and parses the template definitions from the
 files identified by the pattern, which must match at least one file. The
@@ -1512,7 +1512,7 @@ the last one mentioned will be the one that results.
 
 
 </h3>
-<pre>func (t *<a href="#Template">Template</a>) AddParseTree(name <a href="/pkg/builtin/#string">string</a>, tree *<a href="/pkg/text/template/parse/">parse</a>.<a href="/pkg/text/template/parse/#Tree">Tree</a>) (*<a href="#Template">Template</a>, <a href="/pkg/builtin/#error">error</a>)</pre>
+<pre>func (t *<a href="#Template">Template</a>) AddParseTree(name <a href="/golang.org/pkg/builtin/#string">string</a>, tree *<a href="/pkg/text/template/parse/">parse</a>.<a href="/pkg/text/template/parse/#Tree">Tree</a>) (*<a href="#Template">Template</a>, <a href="/golang.org/pkg/builtin/#error">error</a>)</pre>
 <p data-zhpect-trans="PeafDSe">
 AddParseTree adds parse tree for template with given name and associates it with t.
 If the template does not already exist, it will create a new one.
@@ -1529,7 +1529,7 @@ If the template does exist, it will be replaced.
 
 
 </h3>
-<pre>func (t *<a href="#Template">Template</a>) Clone() (*<a href="#Template">Template</a>, <a href="/pkg/builtin/#error">error</a>)</pre>
+<pre>func (t *<a href="#Template">Template</a>) Clone() (*<a href="#Template">Template</a>, <a href="/golang.org/pkg/builtin/#error">error</a>)</pre>
 <p data-zhpect-trans="vDVdnph">
 Clone returns a duplicate of the template, including all associated
 templates. The actual representation is not copied, but the name space of
@@ -1549,7 +1549,7 @@ by adding the variants after the clone is made.
 
     <span title="Added in Go 1.5">1.5</span>
 </h3>
-<pre>func (t *<a href="#Template">Template</a>) DefinedTemplates() <a href="/pkg/builtin/#string">string</a></pre>
+<pre>func (t *<a href="#Template">Template</a>) DefinedTemplates() <a href="/golang.org/pkg/builtin/#string">string</a></pre>
 <p data-zhpect-trans="MuA5HSP">
 DefinedTemplates returns a string listing the defined templates,
 prefixed by the string &#34;; defined templates are: &#34;. If there are none,
@@ -1567,7 +1567,7 @@ and in html/template.
 
 
 </h3>
-<pre>func (t *<a href="#Template">Template</a>) Delims(left, right <a href="/pkg/builtin/#string">string</a>) *<a href="#Template">Template</a></pre>
+<pre>func (t *<a href="#Template">Template</a>) Delims(left, right <a href="/golang.org/pkg/builtin/#string">string</a>) *<a href="#Template">Template</a></pre>
 <p data-zhpect-trans="3QCeZYX">
 Delims sets the action delimiters to the specified strings, to be used in
 subsequent calls to Parse, ParseFiles, or ParseGlob. Nested template
@@ -1586,7 +1586,7 @@ The return value is the template, so calls can be chained.
 
 
 </h3>
-<pre>func (t *<a href="#Template">Template</a>) Execute(wr <a href="/pkg/io/">io</a>.<a href="/pkg/io/#Writer">Writer</a>, data interface{}) <a href="/pkg/builtin/#error">error</a></pre>
+<pre>func (t *<a href="#Template">Template</a>) Execute(wr <a href="/pkg/io/">io</a>.<a href="/pkg/io/#Writer">Writer</a>, data interface{}) <a href="/golang.org/pkg/builtin/#error">error</a></pre>
 <p data-zhpect-trans="EYjVB3j">
 Execute applies a parsed template to the specified data object,
 and writes the output to wr.
@@ -1611,7 +1611,7 @@ value that the reflect.Value holds, as in fmt.Print.
 
 
 </h3>
-<pre>func (t *<a href="#Template">Template</a>) ExecuteTemplate(wr <a href="/pkg/io/">io</a>.<a href="/pkg/io/#Writer">Writer</a>, name <a href="/pkg/builtin/#string">string</a>, data interface{}) <a href="/pkg/builtin/#error">error</a></pre>
+<pre>func (t *<a href="#Template">Template</a>) ExecuteTemplate(wr <a href="/pkg/io/">io</a>.<a href="/pkg/io/#Writer">Writer</a>, name <a href="/golang.org/pkg/builtin/#string">string</a>, data interface{}) <a href="/golang.org/pkg/builtin/#error">error</a></pre>
 <p data-zhpect-trans="X82A9Z2">
 ExecuteTemplate applies the template associated with t that has the given name
 to the specified data object and writes the output to wr.
@@ -1652,7 +1652,7 @@ so calls can be chained.
 
 
 </h3>
-<pre>func (t *<a href="#Template">Template</a>) Lookup(name <a href="/pkg/builtin/#string">string</a>) *<a href="#Template">Template</a></pre>
+<pre>func (t *<a href="#Template">Template</a>) Lookup(name <a href="/golang.org/pkg/builtin/#string">string</a>) *<a href="#Template">Template</a></pre>
 <p data-zhpect-trans="SzTHAeB">
 Lookup returns the template with the given name that is associated with t.
 It returns nil if there is no such template or the template has no definition.
@@ -1668,7 +1668,7 @@ It returns nil if there is no such template or the template has no definition.
 
 
 </h3>
-<pre>func (t *<a href="#Template">Template</a>) Name() <a href="/pkg/builtin/#string">string</a></pre>
+<pre>func (t *<a href="#Template">Template</a>) Name() <a href="/golang.org/pkg/builtin/#string">string</a></pre>
 <p data-zhpect-trans="w43793Q">
 Name returns the name of the template.
 </p>
@@ -1683,7 +1683,7 @@ Name returns the name of the template.
 
 
 </h3>
-<pre>func (t *<a href="#Template">Template</a>) New(name <a href="/pkg/builtin/#string">string</a>) *<a href="#Template">Template</a></pre>
+<pre>func (t *<a href="#Template">Template</a>) New(name <a href="/golang.org/pkg/builtin/#string">string</a>) *<a href="#Template">Template</a></pre>
 <p data-zhpect-trans="cYkWwJF">
 New allocates a new, undefined template associated with the given one and with the same
 delimiters. The association, which is transitive, allows one template to
@@ -1700,7 +1700,7 @@ invoke another with a {{template}} action.
 
     <span title="Added in Go 1.5">1.5</span>
 </h3>
-<pre>func (t *<a href="#Template">Template</a>) Option(opt ...<a href="/pkg/builtin/#string">string</a>) *<a href="#Template">Template</a></pre>
+<pre>func (t *<a href="#Template">Template</a>) Option(opt ...<a href="/golang.org/pkg/builtin/#string">string</a>) *<a href="#Template">Template</a></pre>
 <p data-zhpect-trans="yaXFAVf">
 Option sets options for the template. Options are described by
 strings, either a simple string or &#34;key=value&#34;. There can be at
@@ -1734,7 +1734,7 @@ indexed with a key that is not present in the map.
 
 
 </h3>
-<pre>func (t *<a href="#Template">Template</a>) Parse(text <a href="/pkg/builtin/#string">string</a>) (*<a href="#Template">Template</a>, <a href="/pkg/builtin/#error">error</a>)</pre>
+<pre>func (t *<a href="#Template">Template</a>) Parse(text <a href="/golang.org/pkg/builtin/#string">string</a>) (*<a href="#Template">Template</a>, <a href="/golang.org/pkg/builtin/#error">error</a>)</pre>
 <p data-zhpect-trans="pdwDn7Q">
 Parse parses text as a template body for t.
 Named template definitions ({{define ...}} or {{block ...}} statements) in text
@@ -1759,7 +1759,7 @@ overwriting the main template body.
 
 
 </h3>
-<pre>func (t *<a href="#Template">Template</a>) ParseFiles(filenames ...<a href="/pkg/builtin/#string">string</a>) (*<a href="#Template">Template</a>, <a href="/pkg/builtin/#error">error</a>)</pre>
+<pre>func (t *<a href="#Template">Template</a>) ParseFiles(filenames ...<a href="/golang.org/pkg/builtin/#string">string</a>) (*<a href="#Template">Template</a>, <a href="/golang.org/pkg/builtin/#error">error</a>)</pre>
 <p data-zhpect-trans="eqvtjcY">
 ParseFiles parses the named files and associates the resulting templates with
 t. If an error occurs, parsing stops and the returned template is nil;
@@ -1785,7 +1785,7 @@ the last one mentioned will be the one that results.
 
 
 </h3>
-<pre>func (t *<a href="#Template">Template</a>) ParseGlob(pattern <a href="/pkg/builtin/#string">string</a>) (*<a href="#Template">Template</a>, <a href="/pkg/builtin/#error">error</a>)</pre>
+<pre>func (t *<a href="#Template">Template</a>) ParseGlob(pattern <a href="/golang.org/pkg/builtin/#string">string</a>) (*<a href="#Template">Template</a>, <a href="/golang.org/pkg/builtin/#error">error</a>)</pre>
 <p data-zhpect-trans="R4uwf8E">
 ParseGlob parses the template definitions in the files identified by the
 pattern and associates the resulting templates with t. The pattern is
