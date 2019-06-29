@@ -1,14 +1,14 @@
 ---
-date: 2019-04-19T17:16:21+08:00
+date: 2019-06-30T00:42:15+08:00
 title: websocket - GoDoc
 featured: ""
 description: Package websocket implements the WebSocket protocol defined in RFC 6455.
 type: godoc.org
 assetSection: package
 godoc_pkg_name: websocket
-godoc_pkgInfo_stamp: 2019-04-23T19:44:47Z
+godoc_pkgInfo_stamp: 2019-06-05T12:11:10Z
 godoc_pkgInfo_importNPkg: 25
-godoc_pkgInfo_importedNPkg: 4493
+godoc_pkgInfo_importedNPkg: 4661
 
 ---
 
@@ -550,12 +550,12 @@ connection after sending a close message.
 read limit set for the connection.
 </p>
 <h3 id="FormatCloseMessage" data-kind="f">
-    func <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1155">FormatCloseMessage</a>
+    func <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1152">FormatCloseMessage</a>
     <a class="permalink" href="#FormatCloseMessage">&para;</a>
     <a class="uses" title="List Function Callers" href="//sourcegraph.com/-/godoc/refs?def=FormatCloseMessage&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h3>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1155">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1152">❖</a>
     <pre>func FormatCloseMessage(closeCode <a href="/golang.org/pkg/builtin#int">int</a>, text <a href="/golang.org/pkg/builtin#string">string</a>) []<a href="/golang.org/pkg/builtin#byte">byte</a></pre>
 </div>
 <p data-zhpect-trans="5AXqFD4">FormatCloseMessage formats closeCode and text as a WebSocket close message.
@@ -808,23 +808,23 @@ replying to the client with an HTTP error response.
 for a close message.
 </p>
 <h4 id="Conn.CloseHandler" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1053">CloseHandler</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1050">CloseHandler</a>
     <a class="permalink" href="#Conn.CloseHandler">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FCloseHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1053">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1050">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) CloseHandler() func(code <a href="/golang.org/pkg/builtin#int">int</a>, text <a href="/golang.org/pkg/builtin#string">string</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="wJxvt6D">CloseHandler returns the current close handler
 </p>
 <h4 id="Conn.EnableWriteCompression" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1137">EnableWriteCompression</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1134">EnableWriteCompression</a>
     <a class="permalink" href="#Conn.EnableWriteCompression">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FEnableWriteCompression&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1137">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1134">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) EnableWriteCompression(enable <a href="/golang.org/pkg/builtin#bool">bool</a>)</pre>
 </div>
 <p data-zhpect-trans="WCaV3Mc">EnableWriteCompression enables and disables write compression of
@@ -842,12 +842,12 @@ compression was not negotiated with the peer.
 </div>
 <p data-zhpect-trans="zB2dQJV">LocalAddr returns the local network address.</p>
 <h4 id="Conn.NextReader" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L937">NextReader</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L934">NextReader</a>
     <a class="permalink" href="#Conn.NextReader">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FNextReader&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L937">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L934">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) NextReader() (messageType <a href="/golang.org/pkg/builtin#int">int</a>, r <a href="//godoc.org/io">io</a>.<a href="//godoc.org/io#Reader">Reader</a>, err <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="tzmw3fw">NextReader returns the next data message received from the peer. The
@@ -880,22 +880,22 @@ previous writer if the application has not already done so.
 PongMessage) are supported.
 </p>
 <h4 id="Conn.PingHandler" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1083">PingHandler</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1080">PingHandler</a>
     <a class="permalink" href="#Conn.PingHandler">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FPingHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1083">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1080">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) PingHandler() func(appData <a href="/golang.org/pkg/builtin#string">string</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="WQ3sqh8">PingHandler returns the current ping handler</p>
 <h4 id="Conn.PongHandler" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1110">PongHandler</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1107">PongHandler</a>
     <a class="permalink" href="#Conn.PongHandler">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FPongHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1110">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1107">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) PongHandler() func(appData <a href="/golang.org/pkg/builtin#string">string</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="YSHcWhW">PongHandler returns the current pong handler
@@ -916,12 +916,12 @@ it in the value pointed to by v.
 about the conversion of JSON to a Go value.
 </p>
 <h4 id="Conn.ReadMessage" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1027">ReadMessage</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1024">ReadMessage</a>
     <a class="permalink" href="#Conn.ReadMessage">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FReadMessage&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1027">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1024">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) ReadMessage() (messageType <a href="/golang.org/pkg/builtin#int">int</a>, p []<a href="/golang.org/pkg/builtin#byte">byte</a>, err <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="332sBpb">ReadMessage is a helper method for getting a reader using NextReader and
@@ -939,12 +939,12 @@ reading from that reader to a buffer.
 <p data-zhpect-trans="8mmFWPf">RemoteAddr returns the remote network address.
 </p>
 <h4 id="Conn.SetCloseHandler" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1071">SetCloseHandler</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1068">SetCloseHandler</a>
     <a class="permalink" href="#Conn.SetCloseHandler">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FSetCloseHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1071">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1068">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) SetCloseHandler(h func(code <a href="/golang.org/pkg/builtin#int">int</a>, text <a href="/golang.org/pkg/builtin#string">string</a>) <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="ctE2gJN">SetCloseHandler sets the handler for close messages received from the peer.
@@ -963,12 +963,12 @@ application must perform some action before sending a close message back to
 the peer.
 </p>
 <h4 id="Conn.SetCompressionLevel" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1145">SetCompressionLevel</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1142">SetCompressionLevel</a>
     <a class="permalink" href="#Conn.SetCompressionLevel">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FSetCompressionLevel&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1145">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1142">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) SetCompressionLevel(level <a href="/golang.org/pkg/builtin#int">int</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="BSeTcj6">SetCompressionLevel sets the flate compression level for subsequent text and
@@ -977,12 +977,12 @@ with the peer. See the compress/flate package for a description of
 compression levels.
 </p>
 <h4 id="Conn.SetPingHandler" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1094">SetPingHandler</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1091">SetPingHandler</a>
     <a class="permalink" href="#Conn.SetPingHandler">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FSetPingHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1094">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1091">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) SetPingHandler(h func(appData <a href="/golang.org/pkg/builtin#string">string</a>) <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="xM9NMzJ">SetPingHandler sets the handler for ping messages received from the peer.
@@ -994,12 +994,12 @@ reader Read methods. The application must read the connection to process
 ping messages as described in the section on Control Messages above.
 </p>
 <h4 id="Conn.SetPongHandler" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1121">SetPongHandler</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1118">SetPongHandler</a>
     <a class="permalink" href="#Conn.SetPongHandler">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FSetPongHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1121">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1118">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) SetPongHandler(h func(appData <a href="/golang.org/pkg/builtin#string">string</a>) <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="JzTFD7y">SetPongHandler sets the handler for pong messages received from the peer.
@@ -1011,12 +1011,12 @@ reader Read methods. The application must read the connection to process
 pong messages as described in the section on Control Messages above.
 </p>
 <h4 id="Conn.SetReadDeadline" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1041">SetReadDeadline</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1038">SetReadDeadline</a>
     <a class="permalink" href="#Conn.SetReadDeadline">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FSetReadDeadline&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1041">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1038">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) SetReadDeadline(t <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="kdWCRhp">SetReadDeadline sets the read deadline on the underlying network connection.
@@ -1025,12 +1025,12 @@ all future reads will return an error. A zero value for t means reads will
 not time out.
 </p>
 <h4 id="Conn.SetReadLimit" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1048">SetReadLimit</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1045">SetReadLimit</a>
     <a class="permalink" href="#Conn.SetReadLimit">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FSetReadLimit&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1048">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1045">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) SetReadLimit(limit <a href="/golang.org/pkg/builtin#int64">int64</a>)</pre>
 </div>
 <p data-zhpect-trans="SYUvE64">SetReadLimit sets the maximum size in bytes for a message read from the peer. If a
@@ -1038,12 +1038,12 @@ message exceeds the limit, the connection sends a close message to the peer
 and returns ErrReadLimit to the application.
 </p>
 <h4 id="Conn.SetWriteDeadline" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L770">SetWriteDeadline</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L767">SetWriteDeadline</a>
     <a class="permalink" href="#Conn.SetWriteDeadline">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FSetWriteDeadline&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L770">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L767">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) SetWriteDeadline(t <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="5nRL2TY">SetWriteDeadline sets the write deadline on the underlying network
@@ -1063,12 +1063,12 @@ not time out.
 <p data-zhpect-trans="hF63xT3">Subprotocol returns the negotiated protocol for the connection.
 </p>
 <h4 id="Conn.UnderlyingConn" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1130">UnderlyingConn</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1127">UnderlyingConn</a>
     <a class="permalink" href="#Conn.UnderlyingConn">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FUnderlyingConn&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1130">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1127">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) UnderlyingConn() <a href="//godoc.org/net">net</a>.<a href="//godoc.org/net#Conn">Conn</a></pre>
 </div>
 <p data-zhpect-trans="mvejVSP">UnderlyingConn returns the internal net.Conn. This can be used to further
@@ -1100,24 +1100,24 @@ message types are CloseMessage, PingMessage and PongMessage.
 conversion of Go values to JSON.
 </p>
 <h4 id="Conn.WriteMessage" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L741">WriteMessage</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L738">WriteMessage</a>
     <a class="permalink" href="#Conn.WriteMessage">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FWriteMessage&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L741">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L738">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) WriteMessage(messageType <a href="/golang.org/pkg/builtin#int">int</a>, data []<a href="/golang.org/pkg/builtin#byte">byte</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="Q3nBbej">WriteMessage is a helper method for getting a writer using NextWriter,
 writing the message and closing the writer.
 </p>
 <h4 id="Conn.WritePreparedMessage" data-kind="m">
-    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L718">WritePreparedMessage</a>
+    func (*Conn) <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L715">WritePreparedMessage</a>
     <a class="permalink" href="#Conn.WritePreparedMessage">&para;</a>
     <a class="uses" title="List Method Callers" href="//sourcegraph.com/-/godoc/refs?def=Conn%2FWritePreparedMessage&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a>
 </h4>
 <div class="funcdecl decl">
-    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L718">❖</a>
+    <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L715">❖</a>
     <pre>func (c *<a href="#Conn">Conn</a>) WritePreparedMessage(pm *<a href="#PreparedMessage">PreparedMessage</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="XSshtLZ">WritePreparedMessage writes prepared message into connection.</p>
