@@ -472,8 +472,8 @@ read limit set for the connection.
         
         
         
-          <h3 id="FormatCloseMessage" data-kind="f">func <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1155">FormatCloseMessage</a> <a class="permalink" href="#FormatCloseMessage">&para;</a> <a class="uses" title="List Function Callers" href="https://sourcegraph.com/-/godoc/refs?def=FormatCloseMessage&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h3>
-          <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1155">❖</a><pre>func FormatCloseMessage(closeCode <a href="/builtin#int">int</a>, text <a href="/builtin#string">string</a>) []<a href="/builtin#byte">byte</a></pre></div><p>
+          <h3 id="FormatCloseMessage" data-kind="f">func <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1152">FormatCloseMessage</a> <a class="permalink" href="#FormatCloseMessage">&para;</a> <a class="uses" title="List Function Callers" href="https://sourcegraph.com/-/godoc/refs?def=FormatCloseMessage&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h3>
+          <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1152">❖</a><pre>func FormatCloseMessage(closeCode <a href="/builtin#int">int</a>, text <a href="/builtin#string">string</a>) []<a href="/builtin#byte">byte</a></pre></div><p>
 FormatCloseMessage formats closeCode and text as a WebSocket close message.
 An empty message is returned for code CloseNoStatusReceived.
 </p>
@@ -739,8 +739,8 @@ for a close message.
   
 
           
-            <h4 id="Conn.CloseHandler" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1053">CloseHandler</a> <a class="permalink" href="#Conn.CloseHandler">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FCloseHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1053">❖</a><pre>func (c *<a href="#Conn">Conn</a>) CloseHandler() func(code <a href="/builtin#int">int</a>, text <a href="/builtin#string">string</a>) <a href="/builtin#error">error</a></pre></div><p>
+            <h4 id="Conn.CloseHandler" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1050">CloseHandler</a> <a class="permalink" href="#Conn.CloseHandler">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FCloseHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1050">❖</a><pre>func (c *<a href="#Conn">Conn</a>) CloseHandler() func(code <a href="/builtin#int">int</a>, text <a href="/builtin#string">string</a>) <a href="/builtin#error">error</a></pre></div><p>
 CloseHandler returns the current close handler
 </p>
 
@@ -748,8 +748,8 @@ CloseHandler returns the current close handler
   
 
           
-            <h4 id="Conn.EnableWriteCompression" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1137">EnableWriteCompression</a> <a class="permalink" href="#Conn.EnableWriteCompression">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FEnableWriteCompression&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1137">❖</a><pre>func (c *<a href="#Conn">Conn</a>) EnableWriteCompression(enable <a href="/builtin#bool">bool</a>)</pre></div><p>
+            <h4 id="Conn.EnableWriteCompression" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1134">EnableWriteCompression</a> <a class="permalink" href="#Conn.EnableWriteCompression">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FEnableWriteCompression&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1134">❖</a><pre>func (c *<a href="#Conn">Conn</a>) EnableWriteCompression(enable <a href="/builtin#bool">bool</a>)</pre></div><p>
 EnableWriteCompression enables and disables write compression of
 subsequent text and binary messages. This function is a noop if
 compression was not negotiated with the peer.
@@ -768,8 +768,8 @@ LocalAddr returns the local network address.
   
 
           
-            <h4 id="Conn.NextReader" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L937">NextReader</a> <a class="permalink" href="#Conn.NextReader">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FNextReader&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L937">❖</a><pre>func (c *<a href="#Conn">Conn</a>) NextReader() (messageType <a href="/builtin#int">int</a>, r <a href="/io">io</a>.<a href="/io#Reader">Reader</a>, err <a href="/builtin#error">error</a>)</pre></div><p>
+            <h4 id="Conn.NextReader" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L934">NextReader</a> <a class="permalink" href="#Conn.NextReader">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FNextReader&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L934">❖</a><pre>func (c *<a href="#Conn">Conn</a>) NextReader() (messageType <a href="/builtin#int">int</a>, r <a href="/io">io</a>.<a href="/io#Reader">Reader</a>, err <a href="/builtin#error">error</a>)</pre></div><p>
 NextReader returns the next data message received from the peer. The
 returned messageType is either TextMessage or BinaryMessage.
 </p>
@@ -806,8 +806,8 @@ PongMessage) are supported.
   
 
           
-            <h4 id="Conn.PingHandler" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1083">PingHandler</a> <a class="permalink" href="#Conn.PingHandler">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FPingHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1083">❖</a><pre>func (c *<a href="#Conn">Conn</a>) PingHandler() func(appData <a href="/builtin#string">string</a>) <a href="/builtin#error">error</a></pre></div><p>
+            <h4 id="Conn.PingHandler" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1080">PingHandler</a> <a class="permalink" href="#Conn.PingHandler">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FPingHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1080">❖</a><pre>func (c *<a href="#Conn">Conn</a>) PingHandler() func(appData <a href="/builtin#string">string</a>) <a href="/builtin#error">error</a></pre></div><p>
 PingHandler returns the current ping handler
 </p>
 
@@ -815,8 +815,8 @@ PingHandler returns the current ping handler
   
 
           
-            <h4 id="Conn.PongHandler" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1110">PongHandler</a> <a class="permalink" href="#Conn.PongHandler">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FPongHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1110">❖</a><pre>func (c *<a href="#Conn">Conn</a>) PongHandler() func(appData <a href="/builtin#string">string</a>) <a href="/builtin#error">error</a></pre></div><p>
+            <h4 id="Conn.PongHandler" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1107">PongHandler</a> <a class="permalink" href="#Conn.PongHandler">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FPongHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1107">❖</a><pre>func (c *<a href="#Conn">Conn</a>) PongHandler() func(appData <a href="/builtin#string">string</a>) <a href="/builtin#error">error</a></pre></div><p>
 PongHandler returns the current pong handler
 </p>
 
@@ -838,8 +838,8 @@ about the conversion of JSON to a Go value.
   
 
           
-            <h4 id="Conn.ReadMessage" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1027">ReadMessage</a> <a class="permalink" href="#Conn.ReadMessage">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FReadMessage&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1027">❖</a><pre>func (c *<a href="#Conn">Conn</a>) ReadMessage() (messageType <a href="/builtin#int">int</a>, p []<a href="/builtin#byte">byte</a>, err <a href="/builtin#error">error</a>)</pre></div><p>
+            <h4 id="Conn.ReadMessage" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1024">ReadMessage</a> <a class="permalink" href="#Conn.ReadMessage">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FReadMessage&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1024">❖</a><pre>func (c *<a href="#Conn">Conn</a>) ReadMessage() (messageType <a href="/builtin#int">int</a>, p []<a href="/builtin#byte">byte</a>, err <a href="/builtin#error">error</a>)</pre></div><p>
 ReadMessage is a helper method for getting a reader using NextReader and
 reading from that reader to a buffer.
 </p>
@@ -857,8 +857,8 @@ RemoteAddr returns the remote network address.
   
 
           
-            <h4 id="Conn.SetCloseHandler" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1071">SetCloseHandler</a> <a class="permalink" href="#Conn.SetCloseHandler">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetCloseHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1071">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetCloseHandler(h func(code <a href="/builtin#int">int</a>, text <a href="/builtin#string">string</a>) <a href="/builtin#error">error</a>)</pre></div><p>
+            <h4 id="Conn.SetCloseHandler" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1068">SetCloseHandler</a> <a class="permalink" href="#Conn.SetCloseHandler">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetCloseHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1068">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetCloseHandler(h func(code <a href="/builtin#int">int</a>, text <a href="/builtin#string">string</a>) <a href="/builtin#error">error</a>)</pre></div><p>
 SetCloseHandler sets the handler for close messages received from the peer.
 The code argument to h is the received close code or CloseNoStatusReceived
 if the close message is empty. The default close handler sends a close
@@ -881,8 +881,8 @@ the peer.
   
 
           
-            <h4 id="Conn.SetCompressionLevel" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1145">SetCompressionLevel</a> <a class="permalink" href="#Conn.SetCompressionLevel">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetCompressionLevel&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1145">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetCompressionLevel(level <a href="/builtin#int">int</a>) <a href="/builtin#error">error</a></pre></div><p>
+            <h4 id="Conn.SetCompressionLevel" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1142">SetCompressionLevel</a> <a class="permalink" href="#Conn.SetCompressionLevel">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetCompressionLevel&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1142">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetCompressionLevel(level <a href="/builtin#int">int</a>) <a href="/builtin#error">error</a></pre></div><p>
 SetCompressionLevel sets the flate compression level for subsequent text and
 binary messages. This function is a noop if compression was not negotiated
 with the peer. See the compress/flate package for a description of
@@ -893,8 +893,8 @@ compression levels.
   
 
           
-            <h4 id="Conn.SetPingHandler" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1094">SetPingHandler</a> <a class="permalink" href="#Conn.SetPingHandler">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetPingHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1094">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetPingHandler(h func(appData <a href="/builtin#string">string</a>) <a href="/builtin#error">error</a>)</pre></div><p>
+            <h4 id="Conn.SetPingHandler" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1091">SetPingHandler</a> <a class="permalink" href="#Conn.SetPingHandler">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetPingHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1091">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetPingHandler(h func(appData <a href="/builtin#string">string</a>) <a href="/builtin#error">error</a>)</pre></div><p>
 SetPingHandler sets the handler for ping messages received from the peer.
 The appData argument to h is the PING message application data. The default
 ping handler sends a pong to the peer.
@@ -909,8 +909,8 @@ ping messages as described in the section on Control Messages above.
   
 
           
-            <h4 id="Conn.SetPongHandler" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1121">SetPongHandler</a> <a class="permalink" href="#Conn.SetPongHandler">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetPongHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1121">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetPongHandler(h func(appData <a href="/builtin#string">string</a>) <a href="/builtin#error">error</a>)</pre></div><p>
+            <h4 id="Conn.SetPongHandler" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1118">SetPongHandler</a> <a class="permalink" href="#Conn.SetPongHandler">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetPongHandler&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1118">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetPongHandler(h func(appData <a href="/builtin#string">string</a>) <a href="/builtin#error">error</a>)</pre></div><p>
 SetPongHandler sets the handler for pong messages received from the peer.
 The appData argument to h is the PONG message application data. The default
 pong handler does nothing.
@@ -925,8 +925,8 @@ pong messages as described in the section on Control Messages above.
   
 
           
-            <h4 id="Conn.SetReadDeadline" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1041">SetReadDeadline</a> <a class="permalink" href="#Conn.SetReadDeadline">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetReadDeadline&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1041">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetReadDeadline(t <a href="/time">time</a>.<a href="/time#Time">Time</a>) <a href="/builtin#error">error</a></pre></div><p>
+            <h4 id="Conn.SetReadDeadline" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1038">SetReadDeadline</a> <a class="permalink" href="#Conn.SetReadDeadline">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetReadDeadline&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1038">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetReadDeadline(t <a href="/time">time</a>.<a href="/time#Time">Time</a>) <a href="/builtin#error">error</a></pre></div><p>
 SetReadDeadline sets the read deadline on the underlying network connection.
 After a read has timed out, the websocket connection state is corrupt and
 all future reads will return an error. A zero value for t means reads will
@@ -937,8 +937,8 @@ not time out.
   
 
           
-            <h4 id="Conn.SetReadLimit" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1048">SetReadLimit</a> <a class="permalink" href="#Conn.SetReadLimit">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetReadLimit&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1048">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetReadLimit(limit <a href="/builtin#int64">int64</a>)</pre></div><p>
+            <h4 id="Conn.SetReadLimit" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1045">SetReadLimit</a> <a class="permalink" href="#Conn.SetReadLimit">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetReadLimit&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1045">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetReadLimit(limit <a href="/builtin#int64">int64</a>)</pre></div><p>
 SetReadLimit sets the maximum size in bytes for a message read from the peer. If a
 message exceeds the limit, the connection sends a close message to the peer
 and returns ErrReadLimit to the application.
@@ -948,8 +948,8 @@ and returns ErrReadLimit to the application.
   
 
           
-            <h4 id="Conn.SetWriteDeadline" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L770">SetWriteDeadline</a> <a class="permalink" href="#Conn.SetWriteDeadline">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetWriteDeadline&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L770">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetWriteDeadline(t <a href="/time">time</a>.<a href="/time#Time">Time</a>) <a href="/builtin#error">error</a></pre></div><p>
+            <h4 id="Conn.SetWriteDeadline" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L767">SetWriteDeadline</a> <a class="permalink" href="#Conn.SetWriteDeadline">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FSetWriteDeadline&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L767">❖</a><pre>func (c *<a href="#Conn">Conn</a>) SetWriteDeadline(t <a href="/time">time</a>.<a href="/time#Time">Time</a>) <a href="/builtin#error">error</a></pre></div><p>
 SetWriteDeadline sets the write deadline on the underlying network
 connection. After a write has timed out, the websocket state is corrupt and
 all future writes will return an error. A zero value for t means writes will
@@ -969,8 +969,8 @@ Subprotocol returns the negotiated protocol for the connection.
   
 
           
-            <h4 id="Conn.UnderlyingConn" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1130">UnderlyingConn</a> <a class="permalink" href="#Conn.UnderlyingConn">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FUnderlyingConn&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1130">❖</a><pre>func (c *<a href="#Conn">Conn</a>) UnderlyingConn() <a href="/net">net</a>.<a href="/net#Conn">Conn</a></pre></div><p>
+            <h4 id="Conn.UnderlyingConn" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1127">UnderlyingConn</a> <a class="permalink" href="#Conn.UnderlyingConn">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FUnderlyingConn&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L1127">❖</a><pre>func (c *<a href="#Conn">Conn</a>) UnderlyingConn() <a href="/net">net</a>.<a href="/net#Conn">Conn</a></pre></div><p>
 UnderlyingConn returns the internal net.Conn. This can be used to further
 modifications to connection specific flags.
 </p>
@@ -1002,8 +1002,8 @@ conversion of Go values to JSON.
   
 
           
-            <h4 id="Conn.WriteMessage" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L741">WriteMessage</a> <a class="permalink" href="#Conn.WriteMessage">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FWriteMessage&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L741">❖</a><pre>func (c *<a href="#Conn">Conn</a>) WriteMessage(messageType <a href="/builtin#int">int</a>, data []<a href="/builtin#byte">byte</a>) <a href="/builtin#error">error</a></pre></div><p>
+            <h4 id="Conn.WriteMessage" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L738">WriteMessage</a> <a class="permalink" href="#Conn.WriteMessage">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FWriteMessage&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L738">❖</a><pre>func (c *<a href="#Conn">Conn</a>) WriteMessage(messageType <a href="/builtin#int">int</a>, data []<a href="/builtin#byte">byte</a>) <a href="/builtin#error">error</a></pre></div><p>
 WriteMessage is a helper method for getting a writer using NextWriter,
 writing the message and closing the writer.
 </p>
@@ -1012,8 +1012,8 @@ writing the message and closing the writer.
   
 
           
-            <h4 id="Conn.WritePreparedMessage" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L718">WritePreparedMessage</a> <a class="permalink" href="#Conn.WritePreparedMessage">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FWritePreparedMessage&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
-            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L718">❖</a><pre>func (c *<a href="#Conn">Conn</a>) WritePreparedMessage(pm *<a href="#PreparedMessage">PreparedMessage</a>) <a href="/builtin#error">error</a></pre></div><p>
+            <h4 id="Conn.WritePreparedMessage" data-kind="m">func (*Conn) <a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L715">WritePreparedMessage</a> <a class="permalink" href="#Conn.WritePreparedMessage">&para;</a> <a class="uses" title="List Method Callers" href="https://sourcegraph.com/-/godoc/refs?def=Conn%2FWritePreparedMessage&amp;pkg=github.com%2Fgorilla%2Fwebsocket&amp;repo=github.com%2Fgorilla%2Fwebsocket">Uses</a></h4>
+            <div class="funcdecl decl"><a title="View Source" href="https://github.com/gorilla/websocket/blob/master/conn.go#L715">❖</a><pre>func (c *<a href="#Conn">Conn</a>) WritePreparedMessage(pm *<a href="#PreparedMessage">PreparedMessage</a>) <a href="/builtin#error">error</a></pre></div><p>
 WritePreparedMessage writes prepared message into connection.
 </p>
 
@@ -1268,8 +1268,8 @@ response.
 <div id="x-pkginfo">
 
   <form name="x-refresh" method="POST" action="/-/refresh"><input type="hidden" name="path" value="github.com/gorilla/websocket"></form>
-  <p>Package websocket imports <a href="?imports">25 packages</a> (<a href="?import-graph">graph</a>) and is imported by <a href="?importers">4493 packages</a>.
-  Updated <span class="timeago" title="2019-04-23T19:44:47Z">2019-04-23</span>.
+  <p>Package websocket imports <a href="?imports">25 packages</a> (<a href="?import-graph">graph</a>) and is imported by <a href="?importers">4661 packages</a>.
+  Updated <span class="timeago" title="2019-06-05T12:11:10Z">2019-06-05</span>.
   <a href="javascript:document.getElementsByName('x-refresh')[0].submit();" title="Refresh this page from the source.">Refresh now</a>.
   <a href="?tools">Tools</a> for package owners.
   
