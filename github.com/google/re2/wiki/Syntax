@@ -1,0 +1,2172 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-67V2J9Se2CifJlftk9/cExHGvxd7N9b9EdGnQEpszu99Ogeecilu9jIDxoCkx3zNLfB9ArraXW0J03qyVmN0Uw==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-e7318add1f7e055d040edb0f75aaa0ba.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-MRlTIqIyb8caK5+o8llXVntXovciHyAM4qE3kWU2S7SIjAPDxYp4mE0jQp4kP5UYegy+lG9y1I6VlsdzEjb5Qw==" rel="stylesheet" href="https://github.githubassets.com/assets/site-294181adec18ed639e160b96b45d17ac.css" />
+    <link crossorigin="anonymous" media="all" integrity="sha512-3P571Vspzc1UUlXE1URjuTl7D7R7Nc+rrVpvTqGryUtC+VHDSExSBujZ4Zq0MCZSar/FtObOgqOcm0WP/hwzqw==" rel="stylesheet" href="https://github.githubassets.com/assets/github-3068294d3d7a8d980f694e5c220c746e.css" />
+    
+    
+    
+    
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Syntax · google/re2 Wiki · GitHub</title>
+    <meta name="description" content="RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library. - google/re2">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    <meta name="twitter:image:src" content="https://avatars0.githubusercontent.com/u/1342004?s=400&amp;v=4" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="google/re2" /><meta name="twitter:description" content="RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library. - google/re2" />
+    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/1342004?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="google/re2" /><meta property="og:url" content="https://github.com/google/re2" /><meta property="og:description" content="RE2 is a fast, safe, thread-friendly alternative to backtracking regular expression engines like those used in PCRE, Perl, and Python. It is a C++ library. - google/re2" />
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="F49C:181E:89891C:F6FEAD:5D1713BA" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_wiki" data-pjax-transient>
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="F49C:181E:89891C:F6FEAD:5D1713BA" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/wiki/show" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+
+<meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="MzY0ZjI3OGM1Y2RmM2NhNGUxOGQ2YTg0MDM1NGRmMjIxYTI5NTlhNTY2ZDAzOGM3YjIxNDAyYmVhNjBmYjI4MXx7InJlbW90ZV9hZGRyZXNzIjoiNjEuMjMxLjMzLjE1OSIsInJlcXVlc3RfaWQiOiJGNDlDOjE4MUU6ODk4OTFDOkY2RkVBRDo1RDE3MTNCQSIsInRpbWVzdGFtcCI6MTU2MTc5MzQ2NiwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="MARKETPLACE_FEATURED_BLOG_POSTS,MARKETPLACE_INVOICED_BILLING,MARKETPLACE_SOCIAL_PROOF_CUSTOMERS,MARKETPLACE_TRENDING_SOCIAL_PROOF,MARKETPLACE_RECOMMENDATIONS,MARKETPLACE_PULL_PANDA_HOMEPAGE,DISPLAY_COMMENTER_FULL_NAME">
+
+  <meta name="html-safe-nonce" content="9fa7e700a9982f99b806328020a6b6f9d8f6a8ee">
+
+  <meta http-equiv="x-pjax-version" content="3af93b0c6a968d47c0de05d7c77eca32">
+  
+
+      <link href="https://github.com/google/re2/commits/master.atom" rel="alternate" title="Recent Commits to re2:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/google/re2 git https://github.com/google/re2.git">
+
+  <meta name="octolytics-dimension-user_id" content="1342004" /><meta name="octolytics-dimension-user_login" content="google" /><meta name="octolytics-dimension-repository_id" content="23086893" /><meta name="octolytics-dimension-repository_nwo" content="google/re2" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="23086893" /><meta name="octolytics-dimension-repository_network_root_nwo" content="google/re2" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production page-responsive">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+        <header class="Header-old header-logged-out js-details-container Details position-relative f4 py-2" role="banner">
+  <div class="container-lg d-lg-flex flex-items-center p-responsive">
+    <div class="d-flex flex-justify-between flex-items-center">
+        <a class="mr-4" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark">
+          <svg height="32" class="octicon octicon-mark-github text-white" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+
+          <div class="d-lg-none css-truncate css-truncate-target width-fit p-2">
+            
+              <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+    <a class="Header-link" href="/google">google</a>
+    /
+    <a class="Header-link" href="/google/re2">re2</a>
+
+
+          </div>
+
+        <div class="d-flex flex-items-center">
+            <a href="/join?source=header-repo"
+              class="d-inline-block d-lg-none f5 text-white no-underline border border-gray-dark rounded-2 px-2 py-1 mr-3 mr-sm-5"
+              data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;client_id&quot;:null,&quot;originating_request_id&quot;:&quot;F49C:181E:89891C:F6FEAD:5D1713BA&quot;,&quot;originating_url&quot;:&quot;https://github.com/google/re2/wiki/Syntax&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:null}}" data-hydro-click-hmac="716b13c4f48169d732e3bfcc3648c5c136e0eb04b49bdf98fb292b416c303f88"
+              data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">
+              Sign&nbsp;up
+            </a>
+
+          <button class="btn-link d-lg-none mt-1 js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <svg height="24" class="octicon octicon-three-bars text-white" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"/></svg>
+          </button>
+        </div>
+    </div>
+
+    <div class="HeaderMenu HeaderMenu--logged-out position-fixed top-0 right-0 bottom-0 height-fit position-lg-relative d-lg-flex flex-justify-between flex-items-center flex-auto">
+      <div class="d-flex d-lg-none flex-justify-end border-bottom bg-gray-light p-3">
+        <button class="btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <svg height="24" class="octicon octicon-x text-gray" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+        </button>
+      </div>
+
+        <nav class="mt-0 px-3 px-lg-0 mb-5 mb-lg-0" aria-label="Global">
+          <ul class="d-lg-flex list-style-none">
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Why GitHub?
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <a href="/features" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Features">Features <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+                    <ul class="list-style-none f5 pb-3">
+                      <li class="edge-item-fix"><a href="/features/code-review/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code review">Code review</a></li>
+                      <li class="edge-item-fix"><a href="/features/project-management/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Project management">Project management</a></li>
+                      <li class="edge-item-fix"><a href="/features/integrations" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Integrations">Integrations</a></li>
+                      <li class="edge-item-fix"><a href="/features/actions" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Actions">Actions</a>
+                          <li class="edge-item-fix"><a href="/features/package-registry" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Package Registry">Package registry</a>
+                      <li class="edge-item-fix"><a href="/features#team-management" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Team management">Team management</a></li>
+                      <li class="edge-item-fix"><a href="/features#social-coding" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Social coding">Social coding</a></li>
+                      <li class="edge-item-fix"><a href="/features#documentation" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Documentation">Documentation</a></li>
+                      <li class="edge-item-fix"><a href="/features#code-hosting" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Code hosting">Code hosting</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                      <li class="edge-item-fix"><a href="/customer-stories" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Customer stories">Customer stories <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="/security" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Security">Security <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
+                <a href="/enterprise" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Enterprise">Enterprise</a>
+              </li>
+
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Explore
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                      <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-0 mt-0 pb-4 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/explore" class="py-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Explore">Explore GitHub <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Learn &amp; contribute</h4>
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/topics" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Topics">Topics</a></li>
+                        <li class="edge-item-fix"><a href="/collections" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Collections">Collections</a></li>
+                      <li class="edge-item-fix"><a href="/trending" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Trending">Trending</a></li>
+                      <li class="edge-item-fix"><a href="https://lab.github.com/" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Learning lab">Learning Lab</a></li>
+                      <li class="edge-item-fix"><a href="https://opensource.guide" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Open source guides">Open source guides</a></li>
+                    </ul>
+
+                    <h4 class="text-gray-light text-normal text-mono f5 mb-2 border-lg-top pt-lg-3">Connect with others</h4>
+                    <ul class="list-style-none mb-0">
+                      <li class="edge-item-fix"><a href="https://github.com/events" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Events">Events</a></li>
+                      <li class="edge-item-fix"><a href="https://github.community" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Community forum">Community forum</a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to GitHub Education">GitHub Education</a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+
+              <li class="border-bottom border-lg-bottom-0 mr-0 mr-lg-3">
+                <a href="/marketplace" class="HeaderMenu-link no-underline py-3 d-block d-lg-inline-block" data-ga-click="(Logged out) Header, go to Marketplace">Marketplace</a>
+              </li>
+
+              <li class="d-block d-lg-flex flex-lg-nowrap flex-lg-items-center border-bottom border-lg-bottom-0 mr-0 mr-lg-3 edge-item-fix position-relative flex-wrap flex-justify-between d-flex flex-items-center ">
+                <details class="HeaderMenu-details details-overlay details-reset width-full">
+                  <summary class="HeaderMenu-summary HeaderMenu-link px-0 py-3 border-0 no-wrap d-block d-lg-inline-block">
+                    Pricing
+                    <svg x="0px" y="0px" viewBox="0 0 14 8" xml:space="preserve" fill="none" class="icon-chevon-down-mktg position-absolute position-lg-relative">
+                       <path d="M1,1l6.2,6L13,1"></path>
+                    </svg>
+                  </summary>
+
+                  <div class="dropdown-menu flex-auto rounded-1 bg-white px-0 pt-2 pb-4 mt-0 p-lg-4 position-relative position-lg-absolute left-0 left-lg-n4">
+                    <a href="/pricing" class="pb-2 lh-condensed-ultra d-block link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Pricing">Plans <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a>
+
+                    <ul class="list-style-none mb-3">
+                      <li class="edge-item-fix"><a href="/pricing#feature-comparison" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Compare plans">Compare plans</a></li>
+                      <li class="edge-item-fix"><a href="https://enterprise.github.com/contact" class="py-2 lh-condensed-ultra d-block link-gray no-underline f5" data-ga-click="(Logged out) Header, go to Contact Sales">Contact Sales</a></li>
+                    </ul>
+
+                    <ul class="list-style-none mb-0 border-lg-top pt-lg-3">
+                      <li class="edge-item-fix"><a href="/nonprofit" class="py-2 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover" data-ga-click="(Logged out) Header, go to Nonprofits">Nonprofit <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                      <li class="edge-item-fix"><a href="https://education.github.com" class="py-2 pb-0 lh-condensed-ultra d-block no-underline link-gray-dark no-underline h5 Bump-link--hover"  data-ga-click="(Logged out) Header, go to Education">Education <span class="Bump-link-symbol float-right text-normal text-gray-light">&rarr;</span></a></li>
+                    </ul>
+                  </div>
+                </details>
+              </li>
+          </ul>
+        </nav>
+
+      <div class="d-lg-flex flex-items-center px-3 px-lg-0 text-center text-lg-left">
+          <div class="d-lg-flex mb-3 mb-lg-0">
+            <div class="header-search flex-self-stretch flex-lg-self-auto mr-0 mr-lg-3 mb-3 mb-lg-0 scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="23086893" data-scoped-search-url="/google/re2/search" data-unscoped-search-url="/search" action="/google/re2/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <label class="form-control input-sm header-search-wrapper p-0 header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control input-sm header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search"
+          data-unscoped-placeholder="Search GitHub"
+          data-scoped-placeholder="Search"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=6oLdeULOWvDYiqivwpXgFYp2gViyVzuHa0n0kzRxKPeR+ZiyUr/MzdUmxulvC1Ik1Qcb9JXfkT3HHaoTbi4i6A=="
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+          </div>
+
+        <a href="/login?return_to=%2Fgoogle%2Fre2%2Fwiki%2FSyntax"
+          class="HeaderMenu-link no-underline mr-3"
+          data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;client_id&quot;:null,&quot;originating_request_id&quot;:&quot;F49C:181E:89891C:F6FEAD:5D1713BA&quot;,&quot;originating_url&quot;:&quot;https://github.com/google/re2/wiki/Syntax&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:null}}" data-hydro-click-hmac="53582c1c003e8bdb95fc5ce5a1ba3f97dceede6c6c4d884b8ce15a139bed410d"
+          data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in">
+          Sign&nbsp;in
+        </a>
+          <a href="/join?source=header-repo"
+            class="HeaderMenu-link d-inline-block no-underline border border-gray-dark rounded-1 px-2 py-1"
+            data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;site header menu&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;client_id&quot;:null,&quot;originating_request_id&quot;:&quot;F49C:181E:89891C:F6FEAD:5D1713BA&quot;,&quot;originating_url&quot;:&quot;https://github.com/google/re2/wiki/Syntax&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:null}}" data-hydro-click-hmac="53582c1c003e8bdb95fc5ce5a1ba3f97dceede6c6c4d884b8ce15a139bed410d"
+            data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up">
+            Sign&nbsp;up
+          </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+    <div id="js-flash-container">
+
+</div>
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled>
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main  >
+      
+  
+
+
+
+  
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav pt-0 pt-lg-4 ">
+    <div class="repohead-details-container clearfix container-lg p-responsive d-none d-lg-block">
+
+      <ul class="pagehead-actions">
+
+
+
+
+  <li>
+    
+  <a class="tooltipped tooltipped-s btn btn-sm btn-with-count" aria-label="You must be signed in to watch a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;notification subscription menu watch&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;client_id&quot;:null,&quot;originating_request_id&quot;:&quot;F49C:181E:89891C:F6FEAD:5D1713BA&quot;,&quot;originating_url&quot;:&quot;https://github.com/google/re2/wiki/Syntax&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:null}}" data-hydro-click-hmac="907443e1cadefa95b2eb7468b35abc10d15c7180d11567fe0b9c6247b6f268bc" href="/login?return_to=%2Fgoogle%2Fre2">
+    <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+</a>    <a class="social-count" href="/google/re2/watchers"
+       aria-label="191 users are watching this repository">
+      191
+    </a>
+
+  </li>
+
+  <li>
+        <a class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to star a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;star button&quot;,&quot;repository_id&quot;:23086893,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;client_id&quot;:null,&quot;originating_request_id&quot;:&quot;F49C:181E:89891C:F6FEAD:5D1713BA&quot;,&quot;originating_url&quot;:&quot;https://github.com/google/re2/wiki/Syntax&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:null}}" data-hydro-click-hmac="ee6551b3b8313ea58426ebde52b1d6b0cad982b5f6a9a9a275ed739cbf3fd5a3" href="/login?return_to=%2Fgoogle%2Fre2">
+      <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+      Star
+</a>
+    <a class="social-count js-social-count" href="/google/re2/stargazers"
+      aria-label="3665 users starred this repository">
+      3,665
+    </a>
+
+  </li>
+
+  <li>
+      <a class="btn btn-sm btn-with-count tooltipped tooltipped-s" aria-label="You must be signed in to fork a repository" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;repo details fork button&quot;,&quot;repository_id&quot;:23086893,&quot;auth_type&quot;:&quot;LOG_IN&quot;,&quot;client_id&quot;:null,&quot;originating_request_id&quot;:&quot;F49C:181E:89891C:F6FEAD:5D1713BA&quot;,&quot;originating_url&quot;:&quot;https://github.com/google/re2/wiki/Syntax&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:null}}" data-hydro-click-hmac="96e55a94cfe0e174a8cbf72c649a2a5e42795892d9b564c17521a14065a1be8c" href="/login?return_to=%2Fgoogle%2Fre2">
+        <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+</a>
+    <a href="/google/re2/network/members" class="social-count"
+       aria-label="557 users forked this repository">
+      557
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+    <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="organization" data-hovercard-url="/orgs/google/hovercard" href="/google">google</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/google/re2">re2</a></strong>
+  
+
+</h1>
+
+    </div>
+    
+<nav class="hx_reponav reponav js-repo-nav js-sidenav-container-pjax container-lg p-responsive d-none d-lg-block"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+    aria-label="Repository"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item reponav-item" itemprop="url" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /google/re2" href="/google/re2">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /google/re2/issues" href="/google/re2/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /google/re2/pulls" href="/google/re2/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+
+
+    <a class="js-selected-navigation-item selected reponav-item" data-hotkey="g w" aria-current="page" data-selected-links="repo_wiki /google/re2/wiki" href="/google/re2/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+    <a data-skip-pjax="true" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy /google/re2/security/advisories" href="/google/re2/security/advisories">
+      <svg class="octicon octicon-shield" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 2l7-2 7 2v6.02C14 12.69 8.69 16 7 16c-1.69 0-7-3.31-7-7.98V2zm1 .75L7 1l6 1.75v5.268C13 12.104 8.449 15 7 15c-1.449 0-6-2.896-6-6.982V2.75zm1 .75L7 2v12c-1.207 0-5-2.482-5-5.985V3.5z"/></svg>
+      Security
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse people /google/re2/pulse" href="/google/re2/pulse">
+      <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+      Insights
+</a>
+
+</nav>
+
+  <div class="reponav-wrapper reponav-small d-lg-none">
+  <nav class="reponav js-reponav text-center no-wrap"
+       itemscope
+       itemtype="http://schema.org/BreadcrumbList">
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a class="js-selected-navigation-item reponav-item" itemprop="url" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /google/re2" href="/google/re2">
+        <span itemprop="name">Code</span>
+        <meta itemprop="position" content="1">
+</a>    </span>
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /google/re2/issues" href="/google/re2/issues">
+          <span itemprop="name">Issues</span>
+          <span class="Counter">0</span>
+          <meta itemprop="position" content="2">
+</a>      </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /google/re2/pulls" href="/google/re2/pulls">
+        <span itemprop="name">Pull requests</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="3">
+</a>    </span>
+
+
+      <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+        <a itemprop="url" class="js-selected-navigation-item selected reponav-item" aria-current="page" data-selected-links="repo_wiki /google/re2/wiki" href="/google/re2/wiki">
+          <span itemprop="name">Wiki</span>
+          <meta itemprop="position" content="5">
+</a>      </span>
+
+      <a itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="security alerts policy /google/re2/security/advisories" href="/google/re2/security/advisories">
+        <span itemprop="name">Security</span>
+        <meta itemprop="position" content="6">
+</a>
+      <a class="js-selected-navigation-item reponav-item" data-selected-links="pulse /google/re2/pulse" href="/google/re2/pulse">
+        Pulse
+</a>
+
+  </nav>
+</div>
+
+
+  </div>
+<div class="container-lg new-discussion-timeline experiment-repo-nav  p-responsive">
+  <div class="repository-content ">
+
+    
+    
+  <div id="wiki-wrapper" class="page">
+          <div class="signup-prompt signup-prompt-unpacking mx-auto mb-6 p-4 border rounded-2"
+      style="background-image: url('https://github.githubassets.com/images/modules/site/heroes/octocat-unpacking-hubot.svg')">
+      <div class="position-relative">
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/prompt_dismissals/wikis" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="P942VewtTxJ4DesbqVaef6RP4GMVTGRtUNz62ybHDBbrWuhbI5ViNSdPb9dBDonDLwso9XUHu7qmfa4bGIkHxQ==" />
+          <button
+            type="submit"
+            class="position-absolute top-0 right-0 py-1 px-2 border bg-white btn-link link-gray no-underline f6"
+            data-ga-click="(Logged out) Sign up prompt, click, text:Dismiss"
+            data-ga-load="Wiki, view, type:redesigned sign up prompt">
+            Dismiss
+          </button>
+</form>        <h3 class="col-6 col-md-12 mb-2 lh-condensed">Document your code</h3>
+        <p class="col-md-7">
+          Every project on GitHub comes with a version-controlled wiki to give your
+          documentation the high level of care it deserves. It’s easy to create
+          well-maintained, Markdown or rich text documentation alongside your code.
+        </p>
+        <a class="btn btn-primary mr-2" data-hydro-click="{&quot;event_type&quot;:&quot;authentication.click&quot;,&quot;payload&quot;:{&quot;location_in_page&quot;:&quot;releases sign up prompt&quot;,&quot;repository_id&quot;:null,&quot;auth_type&quot;:&quot;SIGN_UP&quot;,&quot;client_id&quot;:null,&quot;originating_request_id&quot;:&quot;F49C:181E:89891C:F6FEAD:5D1713BA&quot;,&quot;originating_url&quot;:&quot;https://github.com/google/re2/wiki/Syntax&quot;,&quot;referrer&quot;:null,&quot;user_id&quot;:null}}" data-hydro-click-hmac="a426e262f2c3b48acd1014c0aef513f9a7c44f06451f670d114cb7b326502f02" data-ga-click="(Logged out) Sign up prompt, click, text:Sign up for free" data-ga-load="Wiki, view, type:redesigned sign up prompt" href="/join?source=prompt-wiki-show">Sign up for free</a>
+        <a href="/pricing"
+          class="d-block d-sm-inline-block mt-2 mt-sm-0"
+          data-ga-click="(Logged out) Sign up prompt, click, text:See pricing for teams and enterprises"
+          data-ga-load="Wiki, view, type:redesigned sign up prompt">
+          See pricing for teams and enterprises
+        </a>
+      </div>
+    </div>
+
+
+    <div class="d-flex flex-column flex-md-row gh-header">
+      <h1 class="flex-auto min-width-0 mb-2 mb-md-0 mr-0 mr-md-2 gh-header-title instapaper_title">Syntax</h1>
+
+        <div class="mt-0 mt-lg-1 flex-shrink-0 gh-header-actions">
+          <a href="#wiki-pages-box" class="d-md-none ">Jump to bottom</a>
+
+        </div>
+    </div>
+
+    <div class="mt-2 mt-md-1 pb-3 gh-header-meta">
+      Russ Cox edited this page <relative-time datetime="2019-04-26T02:30:15Z">Apr 26, 2019</relative-time>
+      &middot;
+      <a href="/google/re2/wiki/Syntax/_history" class="muted-link">
+        16 revisions
+      </a>
+    </div>
+
+  <div id="wiki-content" class="d-flex flex-column flex-md-row">
+    <div id="wiki-body" class="mt-4 flex-auto min-width-0 gollum-markdown-content instapaper_body">
+        <div class="markdown-body">
+          <p>
+Regular expressions are a notation for
+describing sets of character strings.
+When a particular string is in the set
+described by a regular expression,
+we often say that the regular expression
+<i>matches</i>
+the string.
+</p>
+<p>
+The simplest regular expression is a single literal character.
+Except for the metacharacters like
+<code>*+?()|</code>,
+characters match themselves.
+To match a metacharacter, escape it with
+a backslash:
+<code>\+</code>
+matches a literal plus character.
+</p>
+<p>
+Two regular expressions can be alternated or concatenated to form a new
+regular expression:
+if <i>e</i><sub>1</sub> matches
+<i>s</i>
+and <i>e</i><sub>2</sub> matches
+<i>t</i>,
+then <i>e</i><sub>1</sub><code>|</code><i>e</i><sub>2</sub> matches
+<i>s</i>
+or
+<i>t</i>,
+and
+<i>e</i><sub>1</sub><i>e</i><sub>2</sub>
+matches
+<i>st</i>.
+</p>
+<p>
+The metacharacters
+<code>*</code>,
+<code>+</code>,
+and
+<code>?</code>
+are repetition operators:
+<i>e</i><sub>1</sub><code>*</code>
+matches a sequence of zero or more (possibly different)
+strings, each of which match <i>e</i><sub>1</sub>;
+<i>e</i><sub>1</sub><code>+</code>
+matches one or more;
+<i>e</i><sub>1</sub><code>?</code>
+matches zero or one.
+</p>
+<p>
+The operator precedence, from weakest to strongest binding, is
+first alternation, then concatenation, and finally the
+repetition operators.
+Explicit parentheses can be used to force different meanings,
+just as in arithmetic expressions.
+Some examples:
+<code>ab|cd</code>
+is equivalent to
+<code>(ab)|(cd)</code>;
+<code>ab*</code>
+is equivalent to
+<code>a(b*)</code>.
+</p>
+<p>
+The syntax described so far is most of the traditional Unix
+<i>egrep</i>
+regular expression syntax.
+This subset suffices to describe all regular
+languages: loosely speaking, a regular language is a set
+of strings that can be matched in a single pass through
+the text using only a fixed amount of memory.
+Newer regular expression facilities (notably Perl and
+those that have copied it) have added
+many new operators and escape sequences, which make the regular
+expressions more concise, and sometimes more cryptic, but usually
+not more powerful.
+</p>
+<p>This page lists the regular expression syntax accepted by RE2.
+</p><p>It also lists some syntax accepted by PCRE, PERL, and VIM.
+</p><table>
+<tr>
+<th>kinds of single-character expressions</th>
+<th>examples</th>
+</tr>
+<tr>
+<td>any character, possibly including newline (s=true)</td>
+<td><code>.</code></td>
+</tr>
+<tr>
+<td>character class</td>
+<td><code>[xyz]</code></td>
+</tr>
+<tr>
+<td>negated character class</td>
+<td><code>[^xyz]</code></td>
+</tr>
+<tr>
+<td>Perl character class <a href="#perl">(link)</a>
+</td>
+<td><code>\d</code></td>
+</tr>
+<tr>
+<td>negated Perl character class</td>
+<td><code>\D</code></td>
+</tr>
+<tr>
+<td>ASCII character class <a href="#ascii">(link)</a>
+</td>
+<td><code>[[:alpha:]]</code></td>
+</tr>
+<tr>
+<td>negated ASCII character class</td>
+<td><code>[[:^alpha:]]</code></td>
+</tr>
+<tr>
+<td>Unicode character class (one-letter name)</td>
+<td><code>\pN</code></td>
+</tr>
+<tr>
+<td>Unicode character class</td>
+<td><code>\p{Greek}</code></td>
+</tr>
+<tr>
+<td>negated Unicode character class (one-letter name)</td>
+<td><code>\PN</code></td>
+</tr>
+<tr>
+<td>negated Unicode character class</td>
+<td><code>\P{Greek}</code></td>
+</tr>
+</table>
+<table>
+<tr>
+<th></th>
+<th>Composites</th>
+</tr>
+<tr>
+<td><code>xy</code></td>
+<td>
+<code>x</code> followed by <code>y</code>
+</td>
+</tr>
+<tr>
+<td><code>x|y</code></td>
+<td>
+<code>x</code> or <code>y</code> (prefer <code>x</code>)</td>
+</tr>
+</table>
+<table>
+<tr>
+<th></th>
+<th>Repetitions</th>
+</tr>
+<tr>
+<td><code>x*</code></td>
+<td>zero or more <code>x</code>, prefer more</td>
+</tr>
+<tr>
+<td><code>x+</code></td>
+<td>one or more <code>x</code>, prefer more</td>
+</tr>
+<tr>
+<td><code>x?</code></td>
+<td>zero or one <code>x</code>, prefer one</td>
+</tr>
+<tr>
+<td><code>x{n,m}</code></td>
+<td>
+<code>n</code> or <code>n</code>+1 or ... or <code>m</code> <code>x</code>, prefer more</td>
+</tr>
+<tr>
+<td><code>x{n,}</code></td>
+<td>
+<code>n</code> or more <code>x</code>, prefer more</td>
+</tr>
+<tr>
+<td><code>x{n}</code></td>
+<td>exactly <code>n</code> <code>x</code>
+</td>
+</tr>
+<tr>
+<td><code>x*?</code></td>
+<td>zero or more <code>x</code>, prefer fewer</td>
+</tr>
+<tr>
+<td><code>x+?</code></td>
+<td>one or more <code>x</code>, prefer fewer</td>
+</tr>
+<tr>
+<td><code>x??</code></td>
+<td>zero or one <code>x</code>, prefer zero</td>
+</tr>
+<tr>
+<td><code>x{n,m}?</code></td>
+<td>
+<code>n</code> or <code>n</code>+1 or ... or <code>m</code> <code>x</code>, prefer fewer</td>
+</tr>
+<tr>
+<td><code>x{n,}?</code></td>
+<td>
+<code>n</code> or more <code>x</code>, prefer fewer</td>
+</tr>
+<tr>
+<td><code>x{n}?</code></td>
+<td>exactly <code>n</code> <code>x</code>
+</td>
+</tr>
+<tr>
+<td><code>x{}</code></td>
+<td>(≡ <code>x*</code>) (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>x{-}</code></td>
+<td>(≡ <code>x*?</code>) (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>x{-n}</code></td>
+<td>(≡ <code>x{n}?</code>) (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>x=</code></td>
+<td>(≡ <code>x?</code>) (NOT SUPPORTED) VIM</td>
+</tr>
+</table>
+<p>Implementation restriction: The counting forms <code>x{n,m}</code>, <code>x{n,}</code>, and <code>x{n}</code> reject forms that create a minimum or maximum repetition count above 1000. Unlimited repetitions are not subject to this restriction.
+</p><table>
+<tr>
+<th></th>
+<th>Possessive repetitions</th>
+</tr>
+<tr>
+<td><code>x*+</code></td>
+<td>zero or more <code>x</code>, possessive (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>x++</code></td>
+<td>one or more <code>x</code>, possessive (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>x?+</code></td>
+<td>zero or one <code>x</code>, possessive (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>x{n,m}+</code></td>
+<td>
+<code>n</code> or ... or <code>m</code> <code>x</code>, possessive (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>x{n,}+</code></td>
+<td>
+<code>n</code> or more <code>x</code>, possessive (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>x{n}+</code></td>
+<td>exactly <code>n</code> <code>x</code>, possessive (NOT SUPPORTED)</td>
+</tr>
+</table>
+<table>
+<tr>
+<th></th>
+<th>Grouping</th>
+</tr>
+<tr>
+<td><code>(re)</code></td>
+<td>numbered capturing group (submatch)</td>
+</tr>
+<tr>
+<td><code>(?P&lt;name&gt;re)</code></td>
+<td>named &amp; numbered capturing group (submatch)</td>
+</tr>
+<tr>
+<td><code>(?&lt;name&gt;re)</code></td>
+<td>named &amp; numbered capturing group (submatch) (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?'name're)</code></td>
+<td>named &amp; numbered capturing group (submatch) (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?:re)</code></td>
+<td>non-capturing group</td>
+</tr>
+<tr>
+<td><code>(?flags)</code></td>
+<td>set flags within current group; non-capturing</td>
+</tr>
+<tr>
+<td><code>(?flags:re)</code></td>
+<td>set flags during re; non-capturing</td>
+</tr>
+<tr>
+<td><code>(?#text)</code></td>
+<td>comment (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?|x|y|z)</code></td>
+<td>branch numbering reset (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?&gt;re)</code></td>
+<td>possessive match of <code>re</code> (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>re@&gt;</code></td>
+<td>possessive match of <code>re</code> (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>%(re)</code></td>
+<td>non-capturing group (NOT SUPPORTED) VIM</td>
+</tr>
+</table>
+<p><a name="user-content-flags"></a></p>
+<table>
+<tr>
+<th></th>
+<th>Flags</th>
+</tr>
+<tr>
+<td><code>i</code></td>
+<td>case-insensitive (default false)</td>
+</tr>
+<tr>
+<td><code>m</code></td>
+<td>multi-line mode: <code>^</code> and <code>$</code> match begin/end line in addition to begin/end text (default false)</td>
+</tr>
+<tr>
+<td><code>s</code></td>
+<td>let <code>.</code> match <code>\n</code> (default false)</td>
+</tr>
+<tr>
+<td><code>U</code></td>
+<td>ungreedy: swap meaning of <code>x*</code> and <code>x*?</code>, <code>x+</code> and <code>x+?</code>, etc (default false)</td>
+</tr>
+</table>
+<p>Flag syntax is <code>xyz</code> (set) or <code>-xyz</code> (clear) or <code>xy-z</code> (set <code>xy</code>, clear <code>z</code>).
+</p><table>
+<tr>
+<th></th>
+<th>Empty strings</th>
+</tr>
+<tr>
+<td><code>^</code></td>
+<td>at beginning of text or line (<code>m</code>=true)</td>
+</tr>
+<tr>
+<td><code>$</code></td>
+<td>at end of text (like <code>\z</code> not <code>\Z</code>) or line (<code>m</code>=true)</td>
+</tr>
+<tr>
+<td><code>\A</code></td>
+<td>at beginning of text</td>
+</tr>
+<tr>
+<td><code>\b</code></td>
+<td>at ASCII word boundary (<code>\w</code> on one side and <code>\W</code>, <code>\A</code>, or <code>\z</code> on the other)</td>
+</tr>
+<tr>
+<td><code>\B</code></td>
+<td>not at ASCII word boundary</td>
+</tr>
+<tr>
+<td><code>\g</code></td>
+<td>at beginning of subtext being searched (NOT SUPPORTED) PCRE</td>
+</tr>
+<tr>
+<td><code>\G</code></td>
+<td>at end of last match (NOT SUPPORTED) PERL</td>
+</tr>
+<tr>
+<td><code>\Z</code></td>
+<td>at end of text, or before newline at end of text (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\z</code></td>
+<td>at end of text</td>
+</tr>
+<tr>
+<td><code>(?=re)</code></td>
+<td>before text matching <code>re</code> (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?!re)</code></td>
+<td>before text not matching <code>re</code> (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?&lt;=re)</code></td>
+<td>after text matching <code>re</code> (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?&lt;!re)</code></td>
+<td>after text not matching <code>re</code> (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>re&amp;</code></td>
+<td>before text matching <code>re</code> (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>re@=</code></td>
+<td>before text matching <code>re</code> (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>re@!</code></td>
+<td>before text not matching <code>re</code> (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>re@&lt;=</code></td>
+<td>after text matching <code>re</code> (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>re@&lt;!</code></td>
+<td>after text not matching <code>re</code> (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\zs</code></td>
+<td>sets start of match (= \K) (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\ze</code></td>
+<td>sets end of match (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\%^</code></td>
+<td>beginning of file (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\%$</code></td>
+<td>end of file (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\%V</code></td>
+<td>on screen (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\%#</code></td>
+<td>cursor position (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\%'m</code></td>
+<td>mark <code>m</code> position (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\%23l</code></td>
+<td>in line 23 (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\%23c</code></td>
+<td>in column 23 (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\%23v</code></td>
+<td>in virtual column 23 (NOT SUPPORTED) VIM</td>
+</tr>
+</table>
+<table>
+<tr>
+<th></th>
+<th>Escape sequences</th>
+</tr>
+<tr>
+<td><code>\a</code></td>
+<td>bell (≡ <code>\007</code>)</td>
+</tr>
+<tr>
+<td><code>\f</code></td>
+<td>form feed (≡ <code>\014</code>)</td>
+</tr>
+<tr>
+<td><code>\t</code></td>
+<td>horizontal tab (≡ <code>\011</code>)</td>
+</tr>
+<tr>
+<td><code>\n</code></td>
+<td>newline (≡ <code>\012</code>)</td>
+</tr>
+<tr>
+<td><code>\r</code></td>
+<td>carriage return (≡ <code>\015</code>)</td>
+</tr>
+<tr>
+<td><code>\v</code></td>
+<td>vertical tab character (≡ <code>\013</code>)</td>
+</tr>
+<tr>
+<td><code>\*</code></td>
+<td>literal <code>*</code>, for any punctuation character <code>*</code>
+</td>
+</tr>
+<tr>
+<td><code>\123</code></td>
+<td>octal character code (up to three digits)</td>
+</tr>
+<tr>
+<td><code>\x7F</code></td>
+<td>hex character code (exactly two digits)</td>
+</tr>
+<tr>
+<td><code>\x{10FFFF}</code></td>
+<td>hex character code</td>
+</tr>
+<tr>
+<td><code>\C</code></td>
+<td>match a single byte even in UTF-8 mode</td>
+</tr>
+<tr>
+<td><code>\Q...\E</code></td>
+<td>literal text <code>...</code> even if <code>...</code> has punctuation</td>
+</tr>
+<tr>
+<td><code>\1</code></td>
+<td>backreference (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\b</code></td>
+<td>backspace (NOT SUPPORTED) (use <code>\010</code>)</td>
+</tr>
+<tr>
+<td><code>\cK</code></td>
+<td>control char ^K (NOT SUPPORTED) (use <code>\001</code> etc)</td>
+</tr>
+<tr>
+<td><code>\e</code></td>
+<td>escape (NOT SUPPORTED) (use <code>\033</code>)</td>
+</tr>
+<tr>
+<td><code>\g1</code></td>
+<td>backreference (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\g{1}</code></td>
+<td>backreference (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\g{+1}</code></td>
+<td>backreference (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\g{-1}</code></td>
+<td>backreference (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\g{name}</code></td>
+<td>named backreference (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\g&lt;name&gt;</code></td>
+<td>subroutine call (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\g'name'</code></td>
+<td>subroutine call (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\k&lt;name&gt;</code></td>
+<td>named backreference (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\k'name'</code></td>
+<td>named backreference (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\lX</code></td>
+<td>lowercase <code>X</code> (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\ux</code></td>
+<td>uppercase <code>x</code> (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\L...\E</code></td>
+<td>lowercase text <code>...</code> (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\K</code></td>
+<td>reset beginning of <code>$0</code> (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\N{name}</code></td>
+<td>named Unicode character (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\R</code></td>
+<td>line break (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\U...\E</code></td>
+<td>upper case text <code>...</code> (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\X</code></td>
+<td>extended Unicode sequence (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\%d123</code></td>
+<td>decimal character 123 (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\%xFF</code></td>
+<td>hex character FF (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\%o123</code></td>
+<td>octal character 123 (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\%u1234</code></td>
+<td>Unicode character 0x1234 (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\%U12345678</code></td>
+<td>Unicode character 0x12345678 (NOT SUPPORTED) VIM</td>
+</tr>
+</table>
+<table>
+<tr>
+<th></th>
+<th>Character class elements</th>
+</tr>
+<tr>
+<td><code>x</code></td>
+<td>single character</td>
+</tr>
+<tr>
+<td><code>A-Z</code></td>
+<td>character range (inclusive)</td>
+</tr>
+<tr>
+<td><code>\d</code></td>
+<td>Perl character class</td>
+</tr>
+<tr>
+<td><code>[:foo:]</code></td>
+<td>ASCII character class <code>foo</code>
+</td>
+</tr>
+<tr>
+<td><code>\p{Foo}</code></td>
+<td>Unicode character class <code>Foo</code>
+</td>
+</tr>
+<tr>
+<td><code>\pF</code></td>
+<td>Unicode character class <code>F</code> (one-letter name)</td>
+</tr>
+</table>
+<table>
+<tr>
+<th></th>
+<th>Named character classes as character class elements</th>
+</tr>
+<tr>
+<td><code>[\d]</code></td>
+<td>digits (≡ <code>\d</code>)</td>
+</tr>
+<tr>
+<td><code>[^\d]</code></td>
+<td>not digits (≡ <code>\D</code>)</td>
+</tr>
+<tr>
+<td><code>[\D]</code></td>
+<td>not digits (≡ <code>\D</code>)</td>
+</tr>
+<tr>
+<td><code>[^\D]</code></td>
+<td>not not digits (≡ <code>\d</code>)</td>
+</tr>
+<tr>
+<td><code>[[:name:]]</code></td>
+<td>named ASCII class inside character class (≡ <code>[:name:]</code>)</td>
+</tr>
+<tr>
+<td><code>[^[:name:]]</code></td>
+<td>named ASCII class inside negated character class (≡ <code>[:^name:]</code>)</td>
+</tr>
+<tr>
+<td><code>[\p{Name}]</code></td>
+<td>named Unicode property inside character class (≡ <code>\p{Name}</code>)</td>
+</tr>
+<tr>
+<td><code>[^\p{Name}]</code></td>
+<td>named Unicode property inside negated character class (≡ <code>\P{Name}</code>)</td>
+</tr>
+</table>
+<p><a name="user-content-perl"></a></p>
+<table>
+<tr>
+<th></th>
+<th>Perl character classes (all ASCII-only)</th>
+</tr>
+<tr>
+<td><code>\d</code></td>
+<td>digits (≡ <code>[0-9]</code>)</td>
+</tr>
+<tr>
+<td><code>\D</code></td>
+<td>not digits (≡ <code>[^0-9]</code>)</td>
+</tr>
+<tr>
+<td><code>\s</code></td>
+<td>whitespace (≡ <code>[\t\n\f\r ]</code>)</td>
+</tr>
+<tr>
+<td><code>\S</code></td>
+<td>not whitespace (≡ <code>[^\t\n\f\r ]</code>)</td>
+</tr>
+<tr>
+<td><code>\w</code></td>
+<td>word characters (≡ <code>[0-9A-Za-z_]</code>)</td>
+</tr>
+<tr>
+<td><code>\W</code></td>
+<td>not word characters (≡ <code>[^0-9A-Za-z_]</code>)</td>
+</tr>
+<tr>
+<td><code>\h</code></td>
+<td>horizontal space (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\H</code></td>
+<td>not horizontal space (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\v</code></td>
+<td>vertical space (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>\V</code></td>
+<td>not vertical space (NOT SUPPORTED)</td>
+</tr>
+</table>
+<p><a name="user-content-ascii"></a></p>
+<table>
+<tr>
+<th></th>
+<th>ASCII character classes</th>
+</tr>
+<tr>
+<td><code>[[:alnum:]]</code></td>
+<td>alphanumeric (≡ <code>[0-9A-Za-z]</code>)</td>
+</tr>
+<tr>
+<td><code>[[:alpha:]]</code></td>
+<td>alphabetic (≡ <code>[A-Za-z]</code>)</td>
+</tr>
+<tr>
+<td><code>[[:ascii:]]</code></td>
+<td>ASCII (≡ <code>[\x00-\x7F]</code>)</td>
+</tr>
+<tr>
+<td><code>[[:blank:]]</code></td>
+<td>blank (≡ <code>[\t ]</code>)</td>
+</tr>
+<tr>
+<td><code>[[:cntrl:]]</code></td>
+<td>control (≡ <code>[\x00-\x1F\x7F]</code>)</td>
+</tr>
+<tr>
+<td><code>[[:digit:]]</code></td>
+<td>digits (≡ <code>[0-9]</code>)</td>
+</tr>
+<tr>
+<td><code>[[:graph:]]</code></td>
+<td>graphical (≡ <code>[!-~]</code> ≡ <code>[A-Za-z0-9!"#$%&amp;'()*+,\-./:;&lt;=&gt;?@[\\\]^_</code><code>`</code><code>{|}~]</code>)</td>
+</tr>
+<tr>
+<td><code>[[:lower:]]</code></td>
+<td>lower case (≡ <code>[a-z]</code>)</td>
+</tr>
+<tr>
+<td><code>[[:print:]]</code></td>
+<td>printable (≡ <code>[ -~]</code> ≡ <code>[ [:graph:]]</code>)</td>
+</tr>
+<tr>
+<td><code>[[:punct:]]</code></td>
+<td>punctuation (≡ <code>[!-/:-@[-</code><code>`</code><code>{-~]</code>)</td>
+</tr>
+<tr>
+<td><code>[[:space:]]</code></td>
+<td>whitespace (≡ <code>[\t\n\v\f\r ]</code>)</td>
+</tr>
+<tr>
+<td><code>[[:upper:]]</code></td>
+<td>upper case (≡ <code>[A-Z]</code>)</td>
+</tr>
+<tr>
+<td><code>[[:word:]]</code></td>
+<td>word characters (≡ <code>[0-9A-Za-z_]</code>)</td>
+</tr>
+<tr>
+<td><code>[[:xdigit:]]</code></td>
+<td>hex digit (≡ <code>[0-9A-Fa-f]</code>)</td>
+</tr>
+</table>
+<table>
+<tr>
+<th></th>
+<th>Unicode character class names--general category</th>
+</tr>
+<tr>
+<td><code>C</code></td>
+<td>other</td>
+</tr>
+<tr>
+<td><code>Cc</code></td>
+<td>control</td>
+</tr>
+<tr>
+<td><code>Cf</code></td>
+<td>format</td>
+</tr>
+<tr>
+<td><code>Cn</code></td>
+<td>unassigned code points (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>Co</code></td>
+<td>private use</td>
+</tr>
+<tr>
+<td><code>Cs</code></td>
+<td>surrogate</td>
+</tr>
+<tr>
+<td><code>L</code></td>
+<td>letter</td>
+</tr>
+<tr>
+<td><code>LC</code></td>
+<td>cased letter (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>L&amp;</code></td>
+<td>cased letter (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>Ll</code></td>
+<td>lowercase letter</td>
+</tr>
+<tr>
+<td><code>Lm</code></td>
+<td>modifier letter</td>
+</tr>
+<tr>
+<td><code>Lo</code></td>
+<td>other letter</td>
+</tr>
+<tr>
+<td><code>Lt</code></td>
+<td>titlecase letter</td>
+</tr>
+<tr>
+<td><code>Lu</code></td>
+<td>uppercase letter</td>
+</tr>
+<tr>
+<td><code>M</code></td>
+<td>mark</td>
+</tr>
+<tr>
+<td><code>Mc</code></td>
+<td>spacing mark</td>
+</tr>
+<tr>
+<td><code>Me</code></td>
+<td>enclosing mark</td>
+</tr>
+<tr>
+<td><code>Mn</code></td>
+<td>non-spacing mark</td>
+</tr>
+<tr>
+<td><code>N</code></td>
+<td>number</td>
+</tr>
+<tr>
+<td><code>Nd</code></td>
+<td>decimal number</td>
+</tr>
+<tr>
+<td><code>Nl</code></td>
+<td>letter number</td>
+</tr>
+<tr>
+<td><code>No</code></td>
+<td>other number</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td>punctuation</td>
+</tr>
+<tr>
+<td><code>Pc</code></td>
+<td>connector punctuation</td>
+</tr>
+<tr>
+<td><code>Pd</code></td>
+<td>dash punctuation</td>
+</tr>
+<tr>
+<td><code>Pe</code></td>
+<td>close punctuation</td>
+</tr>
+<tr>
+<td><code>Pf</code></td>
+<td>final punctuation</td>
+</tr>
+<tr>
+<td><code>Pi</code></td>
+<td>initial punctuation</td>
+</tr>
+<tr>
+<td><code>Po</code></td>
+<td>other punctuation</td>
+</tr>
+<tr>
+<td><code>Ps</code></td>
+<td>open punctuation</td>
+</tr>
+<tr>
+<td><code>S</code></td>
+<td>symbol</td>
+</tr>
+<tr>
+<td><code>Sc</code></td>
+<td>currency symbol</td>
+</tr>
+<tr>
+<td><code>Sk</code></td>
+<td>modifier symbol</td>
+</tr>
+<tr>
+<td><code>Sm</code></td>
+<td>math symbol</td>
+</tr>
+<tr>
+<td><code>So</code></td>
+<td>other symbol</td>
+</tr>
+<tr>
+<td><code>Z</code></td>
+<td>separator</td>
+</tr>
+<tr>
+<td><code>Zl</code></td>
+<td>line separator</td>
+</tr>
+<tr>
+<td><code>Zp</code></td>
+<td>paragraph separator</td>
+</tr>
+<tr>
+<td><code>Zs</code></td>
+<td>space separator</td>
+</tr>
+</table>
+<table>
+<tr><th>Unicode character class names--scripts</th></tr>
+<tr><td><code>Adlam</code></td></tr>
+<tr><td><code>Ahom</code></td></tr>
+<tr><td><code>Anatolian_Hieroglyphs</code></td></tr>
+<tr><td><code>Arabic</code></td></tr>
+<tr><td><code>Armenian</code></td></tr>
+<tr><td><code>Avestan</code></td></tr>
+<tr><td><code>Balinese</code></td></tr>
+<tr><td><code>Bamum</code></td></tr>
+<tr><td><code>Bassa_Vah</code></td></tr>
+<tr><td><code>Batak</code></td></tr>
+<tr><td><code>Bengali</code></td></tr>
+<tr><td><code>Bhaiksuki</code></td></tr>
+<tr><td><code>Bopomofo</code></td></tr>
+<tr><td><code>Brahmi</code></td></tr>
+<tr><td><code>Braille</code></td></tr>
+<tr><td><code>Buginese</code></td></tr>
+<tr><td><code>Buhid</code></td></tr>
+<tr><td><code>Canadian_Aboriginal</code></td></tr>
+<tr><td><code>Carian</code></td></tr>
+<tr><td><code>Caucasian_Albanian</code></td></tr>
+<tr><td><code>Chakma</code></td></tr>
+<tr><td><code>Cham</code></td></tr>
+<tr><td><code>Cherokee</code></td></tr>
+<tr><td><code>Common</code></td></tr>
+<tr><td><code>Coptic</code></td></tr>
+<tr><td><code>Cuneiform</code></td></tr>
+<tr><td><code>Cypriot</code></td></tr>
+<tr><td><code>Cyrillic</code></td></tr>
+<tr><td><code>Deseret</code></td></tr>
+<tr><td><code>Devanagari</code></td></tr>
+<tr><td><code>Dogra</code></td></tr>
+<tr><td><code>Duployan</code></td></tr>
+<tr><td><code>Egyptian_Hieroglyphs</code></td></tr>
+<tr><td><code>Elbasan</code></td></tr>
+<tr><td><code>Ethiopic</code></td></tr>
+<tr><td><code>Georgian</code></td></tr>
+<tr><td><code>Glagolitic</code></td></tr>
+<tr><td><code>Gothic</code></td></tr>
+<tr><td><code>Grantha</code></td></tr>
+<tr><td><code>Greek</code></td></tr>
+<tr><td><code>Gujarati</code></td></tr>
+<tr><td><code>Gunjala_Gondi</code></td></tr>
+<tr><td><code>Gurmukhi</code></td></tr>
+<tr><td><code>Han</code></td></tr>
+<tr><td><code>Hangul</code></td></tr>
+<tr><td><code>Hanifi_Rohingya</code></td></tr>
+<tr><td><code>Hanunoo</code></td></tr>
+<tr><td><code>Hatran</code></td></tr>
+<tr><td><code>Hebrew</code></td></tr>
+<tr><td><code>Hiragana</code></td></tr>
+<tr><td><code>Imperial_Aramaic</code></td></tr>
+<tr><td><code>Inherited</code></td></tr>
+<tr><td><code>Inscriptional_Pahlavi</code></td></tr>
+<tr><td><code>Inscriptional_Parthian</code></td></tr>
+<tr><td><code>Javanese</code></td></tr>
+<tr><td><code>Kaithi</code></td></tr>
+<tr><td><code>Kannada</code></td></tr>
+<tr><td><code>Katakana</code></td></tr>
+<tr><td><code>Kayah_Li</code></td></tr>
+<tr><td><code>Kharoshthi</code></td></tr>
+<tr><td><code>Khmer</code></td></tr>
+<tr><td><code>Khojki</code></td></tr>
+<tr><td><code>Khudawadi</code></td></tr>
+<tr><td><code>Lao</code></td></tr>
+<tr><td><code>Latin</code></td></tr>
+<tr><td><code>Lepcha</code></td></tr>
+<tr><td><code>Limbu</code></td></tr>
+<tr><td><code>Linear_A</code></td></tr>
+<tr><td><code>Linear_B</code></td></tr>
+<tr><td><code>Lisu</code></td></tr>
+<tr><td><code>Lycian</code></td></tr>
+<tr><td><code>Lydian</code></td></tr>
+<tr><td><code>Mahajani</code></td></tr>
+<tr><td><code>Makasar</code></td></tr>
+<tr><td><code>Malayalam</code></td></tr>
+<tr><td><code>Mandaic</code></td></tr>
+<tr><td><code>Manichaean</code></td></tr>
+<tr><td><code>Marchen</code></td></tr>
+<tr><td><code>Masaram_Gondi</code></td></tr>
+<tr><td><code>Medefaidrin</code></td></tr>
+<tr><td><code>Meetei_Mayek</code></td></tr>
+<tr><td><code>Mende_Kikakui</code></td></tr>
+<tr><td><code>Meroitic_Cursive</code></td></tr>
+<tr><td><code>Meroitic_Hieroglyphs</code></td></tr>
+<tr><td><code>Miao</code></td></tr>
+<tr><td><code>Modi</code></td></tr>
+<tr><td><code>Mongolian</code></td></tr>
+<tr><td><code>Mro</code></td></tr>
+<tr><td><code>Multani</code></td></tr>
+<tr><td><code>Myanmar</code></td></tr>
+<tr><td><code>Nabataean</code></td></tr>
+<tr><td><code>New_Tai_Lue</code></td></tr>
+<tr><td><code>Newa</code></td></tr>
+<tr><td><code>Nko</code></td></tr>
+<tr><td><code>Nushu</code></td></tr>
+<tr><td><code>Ogham</code></td></tr>
+<tr><td><code>Ol_Chiki</code></td></tr>
+<tr><td><code>Old_Hungarian</code></td></tr>
+<tr><td><code>Old_Italic</code></td></tr>
+<tr><td><code>Old_North_Arabian</code></td></tr>
+<tr><td><code>Old_Permic</code></td></tr>
+<tr><td><code>Old_Persian</code></td></tr>
+<tr><td><code>Old_Sogdian</code></td></tr>
+<tr><td><code>Old_South_Arabian</code></td></tr>
+<tr><td><code>Old_Turkic</code></td></tr>
+<tr><td><code>Oriya</code></td></tr>
+<tr><td><code>Osage</code></td></tr>
+<tr><td><code>Osmanya</code></td></tr>
+<tr><td><code>Pahawh_Hmong</code></td></tr>
+<tr><td><code>Palmyrene</code></td></tr>
+<tr><td><code>Pau_Cin_Hau</code></td></tr>
+<tr><td><code>Phags_Pa</code></td></tr>
+<tr><td><code>Phoenician</code></td></tr>
+<tr><td><code>Psalter_Pahlavi</code></td></tr>
+<tr><td><code>Rejang</code></td></tr>
+<tr><td><code>Runic</code></td></tr>
+<tr><td><code>Samaritan</code></td></tr>
+<tr><td><code>Saurashtra</code></td></tr>
+<tr><td><code>Sharada</code></td></tr>
+<tr><td><code>Shavian</code></td></tr>
+<tr><td><code>Siddham</code></td></tr>
+<tr><td><code>SignWriting</code></td></tr>
+<tr><td><code>Sinhala</code></td></tr>
+<tr><td><code>Sogdian</code></td></tr>
+<tr><td><code>Sora_Sompeng</code></td></tr>
+<tr><td><code>Soyombo</code></td></tr>
+<tr><td><code>Sundanese</code></td></tr>
+<tr><td><code>Syloti_Nagri</code></td></tr>
+<tr><td><code>Syriac</code></td></tr>
+<tr><td><code>Tagalog</code></td></tr>
+<tr><td><code>Tagbanwa</code></td></tr>
+<tr><td><code>Tai_Le</code></td></tr>
+<tr><td><code>Tai_Tham</code></td></tr>
+<tr><td><code>Tai_Viet</code></td></tr>
+<tr><td><code>Takri</code></td></tr>
+<tr><td><code>Tamil</code></td></tr>
+<tr><td><code>Tangut</code></td></tr>
+<tr><td><code>Telugu</code></td></tr>
+<tr><td><code>Thaana</code></td></tr>
+<tr><td><code>Thai</code></td></tr>
+<tr><td><code>Tibetan</code></td></tr>
+<tr><td><code>Tifinagh</code></td></tr>
+<tr><td><code>Tirhuta</code></td></tr>
+<tr><td><code>Ugaritic</code></td></tr>
+<tr><td><code>Vai</code></td></tr>
+<tr><td><code>Warang_Citi</code></td></tr>
+<tr><td><code>Yi</code></td></tr>
+<tr><td><code>Zanabazar_Square</code></td></tr>
+</table>
+<table>
+<tr>
+<th></th>
+<th>Vim character classes</th>
+</tr>
+<tr>
+<td><code>\i</code></td>
+<td>identifier character (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\I</code></td>
+<td>
+<code>\i</code> except digits (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\k</code></td>
+<td>keyword character (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\K</code></td>
+<td>
+<code>\k</code> except digits (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\f</code></td>
+<td>file name character (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\F</code></td>
+<td>
+<code>\f</code> except digits (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\p</code></td>
+<td>printable character (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\P</code></td>
+<td>
+<code>\p</code> except digits (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\s</code></td>
+<td>whitespace character (≡ <code>[ \t]</code>) (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\S</code></td>
+<td>non-white space character (≡ <code>[^ \t]</code>) (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\d</code></td>
+<td>digits (≡ <code>[0-9]</code>) VIM</td>
+</tr>
+<tr>
+<td><code>\D</code></td>
+<td>not <code>\d</code> VIM</td>
+</tr>
+<tr>
+<td><code>\x</code></td>
+<td>hex digits (≡ <code>[0-9A-Fa-f]</code>) (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\X</code></td>
+<td>not <code>\x</code> (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\o</code></td>
+<td>octal digits (≡ <code>[0-7]</code>) (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\O</code></td>
+<td>not <code>\o</code> (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\w</code></td>
+<td>word character VIM</td>
+</tr>
+<tr>
+<td><code>\W</code></td>
+<td>not <code>\w</code> VIM</td>
+</tr>
+<tr>
+<td><code>\h</code></td>
+<td>head of word character (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\H</code></td>
+<td>not <code>\h</code> (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\a</code></td>
+<td>alphabetic (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\A</code></td>
+<td>not <code>\a</code> (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\l</code></td>
+<td>lowercase (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\L</code></td>
+<td>not lowercase (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\u</code></td>
+<td>uppercase (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\U</code></td>
+<td>not uppercase (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\_x</code></td>
+<td>
+<code>\x</code> plus newline, for any <code>x</code> (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\c</code></td>
+<td>ignore case (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\C</code></td>
+<td>match case (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\m</code></td>
+<td>magic (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\M</code></td>
+<td>nomagic (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\v</code></td>
+<td>verymagic (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\V</code></td>
+<td>verynomagic (NOT SUPPORTED) VIM</td>
+</tr>
+<tr>
+<td><code>\Z</code></td>
+<td>ignore differences in Unicode combining characters (NOT SUPPORTED) VIM</td>
+</tr>
+</table>
+<table>
+<tr>
+<th></th>
+<th>Magic</th>
+</tr>
+<tr>
+<td><code>(?{code})</code></td>
+<td>arbitrary Perl code (NOT SUPPORTED) PERL</td>
+</tr>
+<tr>
+<td><code>(??{code})</code></td>
+<td>postponed arbitrary Perl code (NOT SUPPORTED) PERL</td>
+</tr>
+<tr>
+<td><code>(?n)</code></td>
+<td>recursive call to regexp capturing group <code>n</code> (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?+n)</code></td>
+<td>recursive call to relative group <code>+n</code> (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?-n)</code></td>
+<td>recursive call to relative group <code>-n</code> (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?C)</code></td>
+<td>PCRE callout (NOT SUPPORTED) PCRE</td>
+</tr>
+<tr>
+<td><code>(?R)</code></td>
+<td>recursive call to entire regexp (≡ <code>(?0)</code>) (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?&amp;name)</code></td>
+<td>recursive call to named group (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?P=name)</code></td>
+<td>named backreference (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?P&gt;name)</code></td>
+<td>recursive call to named group (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?(cond)true|false)</code></td>
+<td>conditional branch (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(?(cond)true)</code></td>
+<td>conditional branch (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*ACCEPT)</code></td>
+<td>make regexps more like Prolog (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*COMMIT)</code></td>
+<td>(NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*F)</code></td>
+<td>(NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*FAIL)</code></td>
+<td>(NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*MARK)</code></td>
+<td>(NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*PRUNE)</code></td>
+<td>(NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*SKIP)</code></td>
+<td>(NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*THEN)</code></td>
+<td>(NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*ANY)</code></td>
+<td>set newline convention (NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*ANYCRLF)</code></td>
+<td>(NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*CR)</code></td>
+<td>(NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*CRLF)</code></td>
+<td>(NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*LF)</code></td>
+<td>(NOT SUPPORTED)</td>
+</tr>
+<tr>
+<td><code>(*BSR_ANYCRLF)</code></td>
+<td>set \R convention (NOT SUPPORTED) PCRE</td>
+</tr>
+<tr>
+<td><code>(*BSR_UNICODE)</code></td>
+<td>(NOT SUPPORTED) PCRE</td>
+</tr>
+</table>
+
+        </div>
+
+    </div>
+
+    <div id="wiki-rightbar" class="mt-4 ml-md-6 flex-shrink-0 width-full wiki-rightbar">
+      <div id="wiki-pages-box" class="mb-4 wiki-pages-box js-wiki-pages-box" role="navigation">
+        
+<div class="Box Box--condensed box-shadow">
+  <div class="Box-header js-wiki-toggle-collapse" style="cursor: pointer">
+    <h3 class="Box-title">
+      <svg class="octicon octicon-triangle-down js-wiki-sidebar-toggle-display" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 5l6 6 6-6H0z"/></svg>
+      <svg class="octicon octicon-triangle-right js-wiki-sidebar-toggle-display d-none" viewBox="0 0 6 16" version="1.1" width="6" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 14l6-6-6-6v12z"/></svg>
+      Pages <span class="Counter Counter--gray">7</span>
+    </h3>
+  </div>
+  <div class=" js-wiki-sidebar-toggle-display">
+    <div class="filter-bar">
+      <input type="text" id="wiki-pages-filter" class="form-control input-sm input-block js-filterable-field" placeholder="Find a Page…" aria-label="Find a Page…">
+    </div>
+
+    <ul class="m-0 p-0 list-style-none" data-filterable-for="wiki-pages-filter" data-filterable-type="substring">
+        <li class="Box-row">
+          <strong><a class="d-block" href="/google/re2/wiki">Home</a></strong>
+        </li>
+        <li class="Box-row">
+          <strong><a class="d-block" href="/google/re2/wiki/Contribute">Contribute</a></strong>
+        </li>
+        <li class="Box-row">
+          <strong><a class="d-block" href="/google/re2/wiki/CplusplusAPI">CplusplusAPI</a></strong>
+        </li>
+        <li class="Box-row">
+          <strong><a class="d-block" href="/google/re2/wiki/Glossary">Glossary</a></strong>
+        </li>
+        <li class="Box-row">
+          <strong><a class="d-block" href="/google/re2/wiki/Install">Install</a></strong>
+        </li>
+        <li class="Box-row">
+          <strong><a class="d-block" href="/google/re2/wiki/Syntax">Syntax</a></strong>
+        </li>
+        <li class="Box-row">
+          <strong><a class="d-block" href="/google/re2/wiki/WhyRE2">WhyRE2</a></strong>
+        </li>
+    </ul>
+  </div>
+</div>
+
+      </div>
+
+
+      <h5 class="mt-0 mb-2">Clone this wiki locally</h5>
+      <div class="width-full input-group">
+        <input
+            id="wiki-clone-url"
+            type="text"
+            data-autoselect
+            class="form-control input-sm text-small text-gray input-monospace"
+            aria-label="Clone URL for this wiki"
+            value="https://github.com/google/re2.wiki.git"
+            readonly>
+        <span class="input-group-button">
+          <clipboard-copy for="wiki-clone-url" aria-label="Copy to clipboard" class="btn btn-sm zeroclipboard-button">
+            <svg class="octicon octicon-clippy" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 13h4v1H2v-1zm5-6H2v1h5V7zm2 3V8l-3 3 3 3v-2h5v-2H9zM4.5 9H2v1h2.5V9zM2 12h2.5v-1H2v1zm9 1h1v2c-.02.28-.11.52-.3.7-.19.18-.42.28-.7.3H1c-.55 0-1-.45-1-1V4c0-.55.45-1 1-1h3c0-1.11.89-2 2-2 1.11 0 2 .89 2 2h3c.55 0 1 .45 1 1v5h-1V6H1v9h10v-2zM2 5h8c0-.55-.45-1-1-1H8c-.55 0-1-.45-1-1s-.45-1-1-1-1 .45-1 1-.45 1-1 1H3c-.55 0-1 .45-1 1z"/></svg>
+          </clipboard-copy>
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+
+    </main>
+  </div>
+  
+
+  </div>
+
+        
+<div class="footer container-lg width-full p-responsive" role="contentinfo">
+  <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+      <li class="mr-3 mr-lg-0">&copy; 2019 <span title="0.21467s from unicorn-cb9885c6d-jtb22">GitHub</span>, Inc.</li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mx-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap col-12 col-lg-5 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+        <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3 mr-lg-0"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" integrity="sha512-BlCvumXWTvpASEdhCGiahDUDf7Bwb8QXA2XnnSnqJ9QafxcNcrNYUNYS2wXmd3nEpO//+zlZa9DSV9zmu5MqRg==" type="application/javascript" src="https://github.githubassets.com/assets/compat-bootstrap-90c0ace0.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-LcoOfcAm3xWwV+pRwTOdnnM4ZYub5QxXDo8wthOGfJD7c4nc+C/RaTBoLlS/e5xSKBloJbaQEBYW13PdB0yO9w==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-d4d6526c.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-8mD3/f6p6y5x4bkl/FSAO3F/pMKM44mgVEmoMe4mwlfIL9UsbVEiE/0zcCRyA8fHoIL40YL+w4U8i1tiWmOLIw==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-56a00fa0.js"></script>
+    
+      <script crossorigin="anonymous" async="async" integrity="sha512-WkzCav40J8JvnJBY6D3eVpEishS1DUhqaHvA2PCjiu0oAwfMjGw1Z00sftkS4TMo2b7FWLZ49HVSUeceW3arGQ==" type="application/javascript" src="https://github.githubassets.com/assets/wiki-89d02428.js"></script>
+
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
+    <summary role="button" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  </body>
+</html>
+
