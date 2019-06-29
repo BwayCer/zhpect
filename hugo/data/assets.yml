@@ -29,6 +29,11 @@ siteCustom:
             - main.css
         js:
             - main.js
+    github.com:
+        css:
+            - main.css
+            - markdown.css
+        js: ~
     golang.org:
         css:
             - style.css
