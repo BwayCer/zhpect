@@ -6,9 +6,9 @@ description: Package websocket implements the WebSocket protocol defined in RFC 
 type: godoc.org
 assetSection: package
 godoc_pkg_name: websocket
-godoc_pkgInfo_stamp: 2019-04-17T12:08:13Z
+godoc_pkgInfo_stamp: 2019-04-23T19:44:47Z
 godoc_pkgInfo_importNPkg: 25
-godoc_pkgInfo_importedNPkg: 4468
+godoc_pkgInfo_importedNPkg: 4493
 
 ---
 
@@ -556,7 +556,7 @@ read limit set for the connection.
 </h3>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1155">❖</a>
-    <pre>func FormatCloseMessage(closeCode <a href="//godoc.org/builtin#int">int</a>, text <a href="//godoc.org/builtin#string">string</a>) []<a href="//godoc.org/builtin#byte">byte</a></pre>
+    <pre>func FormatCloseMessage(closeCode <a href="/golang.org/pkg/builtin#int">int</a>, text <a href="/golang.org/pkg/builtin#string">string</a>) []<a href="/golang.org/pkg/builtin#byte">byte</a></pre>
 </div>
 <p data-zhpect-trans="5AXqFD4">FormatCloseMessage formats closeCode and text as a WebSocket close message.
 An empty message is returned for code CloseNoStatusReceived.
@@ -568,7 +568,7 @@ An empty message is returned for code CloseNoStatusReceived.
 </h3>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L150">❖</a>
-    <pre>func IsCloseError(err <a href="//godoc.org/builtin#error">error</a>, codes ...<a href="//godoc.org/builtin#int">int</a>) <a href="//godoc.org/builtin#bool">bool</a></pre>
+    <pre>func IsCloseError(err <a href="/golang.org/pkg/builtin#error">error</a>, codes ...<a href="/golang.org/pkg/builtin#int">int</a>) <a href="/golang.org/pkg/builtin#bool">bool</a></pre>
 </div>
 <p data-zhpect-trans="9rg2LHf">IsCloseError returns boolean indicating whether the error is a *CloseError
 with one of the specified codes.
@@ -580,7 +580,7 @@ with one of the specified codes.
 </h3>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L163">❖</a>
-    <pre>func IsUnexpectedCloseError(err <a href="//godoc.org/builtin#error">error</a>, expectedCodes ...<a href="//godoc.org/builtin#int">int</a>) <a href="//godoc.org/builtin#bool">bool</a></pre>
+    <pre>func IsUnexpectedCloseError(err <a href="/golang.org/pkg/builtin#error">error</a>, expectedCodes ...<a href="/golang.org/pkg/builtin#int">int</a>) <a href="/golang.org/pkg/builtin#bool">bool</a></pre>
 </div>
 <p data-zhpect-trans="tcaUZAE">IsUnexpectedCloseError returns boolean indicating whether the error is a
 *CloseError with a code not in the list of expected codes.
@@ -625,7 +625,7 @@ result of an application or protocol error and are logged to aid debugging.
 </h3>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/server.go#L323">❖</a>
-    <pre>func IsWebSocketUpgrade(r *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>) <a href="//godoc.org/builtin#bool">bool</a></pre>
+    <pre>func IsWebSocketUpgrade(r *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>) <a href="/golang.org/pkg/builtin#bool">bool</a></pre>
 </div>
 <p data-zhpect-trans="cbF8pV8">IsWebSocketUpgrade returns true if the client requested upgrade to the
 WebSocket protocol.
@@ -637,7 +637,7 @@ WebSocket protocol.
 </h3>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/join.go#L15">❖</a>
-    <pre>func JoinMessages(c *<a href="#Conn">Conn</a>, term <a href="//godoc.org/builtin#string">string</a>) <a href="//godoc.org/io">io</a>.<a href="//godoc.org/io#Reader">Reader</a></pre>
+    <pre>func JoinMessages(c *<a href="#Conn">Conn</a>, term <a href="/golang.org/pkg/builtin#string">string</a>) <a href="//godoc.org/io">io</a>.<a href="//godoc.org/io#Reader">Reader</a></pre>
 </div>
 <p data-zhpect-trans="JS8tbTM">JoinMessages concatenates received messages to create a single io.Reader.
 The string term is appended to each message. The returned reader does not
@@ -650,7 +650,7 @@ support concurrent calls to the Read method.
 </h3>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/json.go#L40">❖</a>
-    <pre>func ReadJSON(c *<a href="#Conn">Conn</a>, v interface{}) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func ReadJSON(c *<a href="#Conn">Conn</a>, v interface{}) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="s9ha2R6">ReadJSON reads the next JSON-encoded message from the connection and stores
 it in the value pointed to by v.
@@ -664,7 +664,7 @@ it in the value pointed to by v.
 </h3>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/server.go#L309">❖</a>
-    <pre>func Subprotocols(r *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>) []<a href="//godoc.org/builtin#string">string</a></pre>
+    <pre>func Subprotocols(r *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>) []<a href="/golang.org/pkg/builtin#string">string</a></pre>
 </div>
 <p data-zhpect-trans="k2dFD8Q">Subprotocols returns the subprotocols requested by the client in the
 Sec-Websocket-Protocol header.
@@ -676,7 +676,7 @@ Sec-Websocket-Protocol header.
 </h3>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/json.go#L15">❖</a>
-    <pre>func WriteJSON(c *<a href="#Conn">Conn</a>, v interface{}) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func WriteJSON(c *<a href="#Conn">Conn</a>, v interface{}) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="FL2vvYg">WriteJSON writes the JSON encoding of v as a message.
 </p>
@@ -708,10 +708,10 @@ interface.  The type of the value stored in a pool is not specified.
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L104">❖</a>
     <pre>type CloseError struct {
     <span class="com">// Code is defined in RFC 6455, section 11.7.</span>
-    <span id="CloseError.Code">Code</span> <a href="//godoc.org/builtin#int">int</a>
+    <span id="CloseError.Code">Code</span> <a href="/golang.org/pkg/builtin#int">int</a>
 
     <span class="com">// Text is the optional text payload.</span>
-    <span id="CloseError.Text">Text</span> <a href="//godoc.org/builtin#string">string</a>
+    <span id="CloseError.Text">Text</span> <a href="/golang.org/pkg/builtin#string">string</a>
 }</pre>
 </div>
 <p data-zhpect-trans="nd4BRNQ">CloseError represents a close message.
@@ -723,7 +723,7 @@ interface.  The type of the value stored in a pool is not specified.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L112">❖</a>
-    <pre>func (e *<a href="#CloseError">CloseError</a>) Error() <a href="//godoc.org/builtin#string">string</a></pre>
+    <pre>func (e *<a href="#CloseError">CloseError</a>) Error() <a href="/golang.org/pkg/builtin#string">string</a></pre>
 </div>
 <h3 id="Conn" data-kind="t">
     type <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L241">Conn</a>
@@ -745,7 +745,7 @@ interface.  The type of the value stored in a pool is not specified.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/client.go#L39">❖</a>
-    <pre>func NewClient(netConn <a href="//godoc.org/net">net</a>.<a href="//godoc.org/net#Conn">Conn</a>, u *<a href="//godoc.org/net/url">url</a>.<a href="//godoc.org/net/url#URL">URL</a>, requestHeader <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Header">Header</a>, readBufSize, writeBufSize <a href="//godoc.org/builtin#int">int</a>) (c *<a href="#Conn">Conn</a>, response *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Response">Response</a>, err <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func NewClient(netConn <a href="//godoc.org/net">net</a>.<a href="//godoc.org/net#Conn">Conn</a>, u *<a href="//godoc.org/net/url">url</a>.<a href="//godoc.org/net/url#URL">URL</a>, requestHeader <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Header">Header</a>, readBufSize, writeBufSize <a href="/golang.org/pkg/builtin#int">int</a>) (c *<a href="#Conn">Conn</a>, response *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Response">Response</a>, err <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="q6pSXTY">NewClient creates a new client connection using the given net connection.
 The URL u specifies the host and request URI. Use requestHeader to specify
@@ -765,7 +765,7 @@ etc.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/server.go#L295">❖</a>
-    <pre>func Upgrade(w <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#ResponseWriter">ResponseWriter</a>, r *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>, responseHeader <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Header">Header</a>, readBufSize, writeBufSize <a href="//godoc.org/builtin#int">int</a>) (*<a href="#Conn">Conn</a>, <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func Upgrade(w <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#ResponseWriter">ResponseWriter</a>, r *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>, responseHeader <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Header">Header</a>, readBufSize, writeBufSize <a href="/golang.org/pkg/builtin#int">int</a>) (*<a href="#Conn">Conn</a>, <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="632TvFa">Upgrade upgrades the HTTP server connection to the WebSocket protocol.</p>
 <p data-zhpect-trans="5NGzUaV">Deprecated: Use websocket.Upgrader instead.</p>
@@ -802,7 +802,7 @@ replying to the client with an HTTP error response.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L330">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) Close() <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) Close() <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="Re4Lq3P">Close closes the underlying network connection without sending or waiting
 for a close message.
@@ -814,7 +814,7 @@ for a close message.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1053">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) CloseHandler() func(code <a href="//godoc.org/builtin#int">int</a>, text <a href="//godoc.org/builtin#string">string</a>) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) CloseHandler() func(code <a href="/golang.org/pkg/builtin#int">int</a>, text <a href="/golang.org/pkg/builtin#string">string</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="wJxvt6D">CloseHandler returns the current close handler
 </p>
@@ -825,7 +825,7 @@ for a close message.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1137">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) EnableWriteCompression(enable <a href="//godoc.org/builtin#bool">bool</a>)</pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) EnableWriteCompression(enable <a href="/golang.org/pkg/builtin#bool">bool</a>)</pre>
 </div>
 <p data-zhpect-trans="WCaV3Mc">EnableWriteCompression enables and disables write compression of
 subsequent text and binary messages. This function is a noop if
@@ -848,7 +848,7 @@ compression was not negotiated with the peer.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L937">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) NextReader() (messageType <a href="//godoc.org/builtin#int">int</a>, r <a href="//godoc.org/io">io</a>.<a href="//godoc.org/io#Reader">Reader</a>, err <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) NextReader() (messageType <a href="/golang.org/pkg/builtin#int">int</a>, r <a href="//godoc.org/io">io</a>.<a href="//godoc.org/io#Reader">Reader</a>, err <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="tzmw3fw">NextReader returns the next data message received from the peer. The
 returned messageType is either TextMessage or BinaryMessage.
@@ -868,7 +868,7 @@ this method return the same error.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L498">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) NextWriter(messageType <a href="//godoc.org/builtin#int">int</a>) (<a href="//godoc.org/io">io</a>.<a href="//godoc.org/io#WriteCloser">WriteCloser</a>, <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) NextWriter(messageType <a href="/golang.org/pkg/builtin#int">int</a>) (<a href="//godoc.org/io">io</a>.<a href="//godoc.org/io#WriteCloser">WriteCloser</a>, <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="snHbbPa">NextWriter returns a writer for the next message to send. The writer&#39;s Close
 method flushes the complete message to the network.
@@ -886,7 +886,7 @@ PongMessage) are supported.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1083">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) PingHandler() func(appData <a href="//godoc.org/builtin#string">string</a>) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) PingHandler() func(appData <a href="/golang.org/pkg/builtin#string">string</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="WQ3sqh8">PingHandler returns the current ping handler</p>
 <h4 id="Conn.PongHandler" data-kind="m">
@@ -896,7 +896,7 @@ PongMessage) are supported.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1110">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) PongHandler() func(appData <a href="//godoc.org/builtin#string">string</a>) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) PongHandler() func(appData <a href="/golang.org/pkg/builtin#string">string</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="YSHcWhW">PongHandler returns the current pong handler
 </p>
@@ -907,7 +907,7 @@ PongMessage) are supported.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/json.go#L49">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) ReadJSON(v interface{}) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) ReadJSON(v interface{}) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="yHkvQAc">ReadJSON reads the next JSON-encoded message from the connection and stores
 it in the value pointed to by v.
@@ -922,7 +922,7 @@ about the conversion of JSON to a Go value.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1027">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) ReadMessage() (messageType <a href="//godoc.org/builtin#int">int</a>, p []<a href="//godoc.org/builtin#byte">byte</a>, err <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) ReadMessage() (messageType <a href="/golang.org/pkg/builtin#int">int</a>, p []<a href="/golang.org/pkg/builtin#byte">byte</a>, err <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="332sBpb">ReadMessage is a helper method for getting a reader using NextReader and
 reading from that reader to a buffer.
@@ -945,7 +945,7 @@ reading from that reader to a buffer.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1071">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) SetCloseHandler(h func(code <a href="//godoc.org/builtin#int">int</a>, text <a href="//godoc.org/builtin#string">string</a>) <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) SetCloseHandler(h func(code <a href="/golang.org/pkg/builtin#int">int</a>, text <a href="/golang.org/pkg/builtin#string">string</a>) <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="ctE2gJN">SetCloseHandler sets the handler for close messages received from the peer.
 The code argument to h is the received close code or CloseNoStatusReceived
@@ -969,7 +969,7 @@ the peer.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1145">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) SetCompressionLevel(level <a href="//godoc.org/builtin#int">int</a>) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) SetCompressionLevel(level <a href="/golang.org/pkg/builtin#int">int</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="BSeTcj6">SetCompressionLevel sets the flate compression level for subsequent text and
 binary messages. This function is a noop if compression was not negotiated
@@ -983,7 +983,7 @@ compression levels.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1094">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) SetPingHandler(h func(appData <a href="//godoc.org/builtin#string">string</a>) <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) SetPingHandler(h func(appData <a href="/golang.org/pkg/builtin#string">string</a>) <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="xM9NMzJ">SetPingHandler sets the handler for ping messages received from the peer.
 The appData argument to h is the PING message application data. The default
@@ -1000,7 +1000,7 @@ ping messages as described in the section on Control Messages above.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1121">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) SetPongHandler(h func(appData <a href="//godoc.org/builtin#string">string</a>) <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) SetPongHandler(h func(appData <a href="/golang.org/pkg/builtin#string">string</a>) <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="JzTFD7y">SetPongHandler sets the handler for pong messages received from the peer.
 The appData argument to h is the PONG message application data. The default
@@ -1017,7 +1017,7 @@ pong messages as described in the section on Control Messages above.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1041">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) SetReadDeadline(t <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) SetReadDeadline(t <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="kdWCRhp">SetReadDeadline sets the read deadline on the underlying network connection.
 After a read has timed out, the websocket connection state is corrupt and
@@ -1031,7 +1031,7 @@ not time out.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L1048">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) SetReadLimit(limit <a href="//godoc.org/builtin#int64">int64</a>)</pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) SetReadLimit(limit <a href="/golang.org/pkg/builtin#int64">int64</a>)</pre>
 </div>
 <p data-zhpect-trans="SYUvE64">SetReadLimit sets the maximum size in bytes for a message read from the peer. If a
 message exceeds the limit, the connection sends a close message to the peer
@@ -1044,7 +1044,7 @@ and returns ErrReadLimit to the application.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L770">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) SetWriteDeadline(t <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) SetWriteDeadline(t <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="5nRL2TY">SetWriteDeadline sets the write deadline on the underlying network
 connection. After a write has timed out, the websocket state is corrupt and
@@ -1058,7 +1058,7 @@ not time out.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L324">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) Subprotocol() <a href="//godoc.org/builtin#string">string</a></pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) Subprotocol() <a href="/golang.org/pkg/builtin#string">string</a></pre>
 </div>
 <p data-zhpect-trans="hF63xT3">Subprotocol returns the negotiated protocol for the connection.
 </p>
@@ -1081,7 +1081,7 @@ modifications to connection specific flags.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L393">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) WriteControl(messageType <a href="//godoc.org/builtin#int">int</a>, data []<a href="//godoc.org/builtin#byte">byte</a>, deadline <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) WriteControl(messageType <a href="/golang.org/pkg/builtin#int">int</a>, data []<a href="/golang.org/pkg/builtin#byte">byte</a>, deadline <a href="//godoc.org/time">time</a>.<a href="//godoc.org/time#Time">Time</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="ZrfcaQD">WriteControl writes a control message with the given deadline. The allowed
 message types are CloseMessage, PingMessage and PongMessage.
@@ -1093,7 +1093,7 @@ message types are CloseMessage, PingMessage and PongMessage.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/json.go#L23">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) WriteJSON(v interface{}) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) WriteJSON(v interface{}) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="LeEbf5Z">WriteJSON writes the JSON encoding of v as a message.</p>
 <p data-zhpect-trans="vh2f26A">See the documentation for encoding/json Marshal for details about the
@@ -1106,7 +1106,7 @@ conversion of Go values to JSON.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L741">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) WriteMessage(messageType <a href="//godoc.org/builtin#int">int</a>, data []<a href="//godoc.org/builtin#byte">byte</a>) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) WriteMessage(messageType <a href="/golang.org/pkg/builtin#int">int</a>, data []<a href="/golang.org/pkg/builtin#byte">byte</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="Q3nBbej">WriteMessage is a helper method for getting a writer using NextWriter,
 writing the message and closing the writer.
@@ -1118,7 +1118,7 @@ writing the message and closing the writer.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/conn.go#L718">❖</a>
-    <pre>func (c *<a href="#Conn">Conn</a>) WritePreparedMessage(pm *<a href="#PreparedMessage">PreparedMessage</a>) <a href="//godoc.org/builtin#error">error</a></pre>
+    <pre>func (c *<a href="#Conn">Conn</a>) WritePreparedMessage(pm *<a href="#PreparedMessage">PreparedMessage</a>) <a href="/golang.org/pkg/builtin#error">error</a></pre>
 </div>
 <p data-zhpect-trans="XSshtLZ">WritePreparedMessage writes prepared message into connection.</p>
 <h3 id="Dialer" data-kind="t">
@@ -1131,17 +1131,17 @@ writing the message and closing the writer.
     <pre>type Dialer struct {
     <span class="com">// NetDial specifies the dial function for creating TCP connections. If
     // NetDial is nil, net.Dial is used.</span>
-    <span id="Dialer.NetDial">NetDial</span> func(network, addr <a href="//godoc.org/builtin#string">string</a>) (<a href="//godoc.org/net">net</a>.<a href="//godoc.org/net#Conn">Conn</a>, <a href="//godoc.org/builtin#error">error</a>)
+    <span id="Dialer.NetDial">NetDial</span> func(network, addr <a href="/golang.org/pkg/builtin#string">string</a>) (<a href="//godoc.org/net">net</a>.<a href="//godoc.org/net#Conn">Conn</a>, <a href="/golang.org/pkg/builtin#error">error</a>)
 
     <span class="com">// NetDialContext specifies the dial function for creating TCP connections. If
     // NetDialContext is nil, net.DialContext is used.</span>
-    <span id="Dialer.NetDialContext">NetDialContext</span> func(ctx <a href="//godoc.org/context">context</a>.<a href="//godoc.org/context#Context">Context</a>, network, addr <a href="//godoc.org/builtin#string">string</a>) (<a href="//godoc.org/net">net</a>.<a href="//godoc.org/net#Conn">Conn</a>, <a href="//godoc.org/builtin#error">error</a>)
+    <span id="Dialer.NetDialContext">NetDialContext</span> func(ctx <a href="//godoc.org/context">context</a>.<a href="//godoc.org/context#Context">Context</a>, network, addr <a href="/golang.org/pkg/builtin#string">string</a>) (<a href="//godoc.org/net">net</a>.<a href="//godoc.org/net#Conn">Conn</a>, <a href="/golang.org/pkg/builtin#error">error</a>)
 
     <span class="com">// Proxy specifies a function to return a proxy for a given
     // Request. If the function returns a non-nil error, the
     // request is aborted with the provided error.
     // If Proxy is nil or returns a nil *URL, no proxy is used.</span>
-    <span id="Dialer.Proxy">Proxy</span> func(*<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>) (*<a href="//godoc.org/net/url">url</a>.<a href="//godoc.org/net/url#URL">URL</a>, <a href="//godoc.org/builtin#error">error</a>)
+    <span id="Dialer.Proxy">Proxy</span> func(*<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>) (*<a href="//godoc.org/net/url">url</a>.<a href="//godoc.org/net/url#URL">URL</a>, <a href="/golang.org/pkg/builtin#error">error</a>)
 
     <span class="com">// TLSClientConfig specifies the TLS configuration to use with tls.Client.
     // If nil, the default configuration is used.</span>
@@ -1153,7 +1153,7 @@ writing the message and closing the writer.
     <span class="com">// ReadBufferSize and WriteBufferSize specify I/O buffer sizes in bytes. If a buffer
     // size is zero, then a useful default size is used. The I/O buffer sizes
     // do not limit the size of the messages that can be sent or received.</span>
-    <span id="Dialer.ReadBufferSize">ReadBufferSize</span>, <span id="Dialer.WriteBufferSize">WriteBufferSize</span> <a href="//godoc.org/builtin#int">int</a>
+    <span id="Dialer.ReadBufferSize">ReadBufferSize</span>, <span id="Dialer.WriteBufferSize">WriteBufferSize</span> <a href="/golang.org/pkg/builtin#int">int</a>
 
     <span class="com">// WriteBufferPool is a pool of buffers for write operations. If the value
     // is not set, then write buffers are allocated to the connection for the
@@ -1167,13 +1167,13 @@ writing the message and closing the writer.
     <span id="Dialer.WriteBufferPool">WriteBufferPool</span> <a href="#BufferPool">BufferPool</a>
 
     <span class="com">// Subprotocols specifies the client&#39;s requested subprotocols.</span>
-    <span id="Dialer.Subprotocols">Subprotocols</span> []<a href="//godoc.org/builtin#string">string</a>
+    <span id="Dialer.Subprotocols">Subprotocols</span> []<a href="/golang.org/pkg/builtin#string">string</a>
 
     <span class="com">// EnableCompression specifies if the client should attempt to negotiate
     // per message compression (RFC 7692). Setting this value to true does not
     // guarantee that compression will be supported. Currently only &#34;no context
     // takeover&#34; modes are supported.</span>
-    <span id="Dialer.EnableCompression">EnableCompression</span> <a href="//godoc.org/builtin#bool">bool</a>
+    <span id="Dialer.EnableCompression">EnableCompression</span> <a href="/golang.org/pkg/builtin#bool">bool</a>
 
     <span class="com">// Jar specifies the cookie jar.
     // If Jar is nil, cookies are not sent in requests and ignored
@@ -1190,7 +1190,7 @@ writing the message and closing the writer.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/client.go#L105">❖</a>
-    <pre>func (d *<a href="#Dialer">Dialer</a>) Dial(urlStr <a href="//godoc.org/builtin#string">string</a>, requestHeader <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Header">Header</a>) (*<a href="#Conn">Conn</a>, *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Response">Response</a>, <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func (d *<a href="#Dialer">Dialer</a>) Dial(urlStr <a href="/golang.org/pkg/builtin#string">string</a>, requestHeader <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Header">Header</a>) (*<a href="#Conn">Conn</a>, *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Response">Response</a>, <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="P8TXR8q">Dial creates a new client connection by calling DialContext with a background context.
 </p>
@@ -1201,7 +1201,7 @@ writing the message and closing the writer.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/client.go#L149">❖</a>
-    <pre>func (d *<a href="#Dialer">Dialer</a>) DialContext(ctx <a href="//godoc.org/context">context</a>.<a href="//godoc.org/context#Context">Context</a>, urlStr <a href="//godoc.org/builtin#string">string</a>, requestHeader <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Header">Header</a>) (*<a href="#Conn">Conn</a>, *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Response">Response</a>, <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func (d *<a href="#Dialer">Dialer</a>) DialContext(ctx <a href="//godoc.org/context">context</a>.<a href="//godoc.org/context#Context">Context</a>, urlStr <a href="/golang.org/pkg/builtin#string">string</a>, requestHeader <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Header">Header</a>) (*<a href="#Conn">Conn</a>, *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Response">Response</a>, <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="B7cmEvf">DialContext creates a new client connection. Use requestHeader to specify the
 origin (Origin), subprotocols (Sec-WebSocket-Protocol) and cookies (Cookie).
@@ -1234,7 +1234,7 @@ need to be closed by the application.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/server.go#L22">❖</a>
-    <pre>func (e <a href="#HandshakeError">HandshakeError</a>) Error() <a href="//godoc.org/builtin#string">string</a></pre>
+    <pre>func (e <a href="#HandshakeError">HandshakeError</a>) Error() <a href="/golang.org/pkg/builtin#string">string</a></pre>
 </div>
 <h3 id="PreparedMessage" data-kind="t">
     type <a title="View Source" href="//github.com/gorilla/websocket/blob/master/prepared.go#L19">PreparedMessage</a>
@@ -1260,7 +1260,7 @@ once for a given set of compression options.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/prepared.go#L43">❖</a>
-    <pre>func NewPreparedMessage(messageType <a href="//godoc.org/builtin#int">int</a>, data []<a href="//godoc.org/builtin#byte">byte</a>) (*<a href="#PreparedMessage">PreparedMessage</a>, <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func NewPreparedMessage(messageType <a href="/golang.org/pkg/builtin#int">int</a>, data []<a href="/golang.org/pkg/builtin#byte">byte</a>) (*<a href="#PreparedMessage">PreparedMessage</a>, <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="m9Hyk5Y">NewPreparedMessage returns an initialized PreparedMessage. You can then send
 it to connection using WritePreparedMessage method. Valid wire
@@ -1282,7 +1282,7 @@ connection options.
     // size is zero, then buffers allocated by the HTTP server are used. The
     // I/O buffer sizes do not limit the size of the messages that can be sent
     // or received.</span>
-    <span id="Upgrader.ReadBufferSize">ReadBufferSize</span>, <span id="Upgrader.WriteBufferSize">WriteBufferSize</span> <a href="//godoc.org/builtin#int">int</a>
+    <span id="Upgrader.ReadBufferSize">ReadBufferSize</span>, <span id="Upgrader.WriteBufferSize">WriteBufferSize</span> <a href="/golang.org/pkg/builtin#int">int</a>
 
     <span class="com">// WriteBufferPool is a pool of buffers for write operations. If the value
     // is not set, then write buffers are allocated to the connection for the
@@ -1301,11 +1301,11 @@ connection options.
     // requested by the client. If there&#39;s no match, then no protocol is
     // negotiated (the Sec-Websocket-Protocol header is not included in the
     // handshake response).</span>
-    <span id="Upgrader.Subprotocols">Subprotocols</span> []<a href="//godoc.org/builtin#string">string</a>
+    <span id="Upgrader.Subprotocols">Subprotocols</span> []<a href="/golang.org/pkg/builtin#string">string</a>
 
     <span class="com">// Error specifies the function for generating HTTP error responses. If Error
     // is nil, then http.Error is used to generate the HTTP response.</span>
-    <span id="Upgrader.Error">Error</span> func(w <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#ResponseWriter">ResponseWriter</a>, r *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>, status <a href="//godoc.org/builtin#int">int</a>, reason <a href="//godoc.org/builtin#error">error</a>)
+    <span id="Upgrader.Error">Error</span> func(w <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#ResponseWriter">ResponseWriter</a>, r *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>, status <a href="/golang.org/pkg/builtin#int">int</a>, reason <a href="/golang.org/pkg/builtin#error">error</a>)
 
     <span class="com">// CheckOrigin returns true if the request Origin header is acceptable. If
     // CheckOrigin is nil, then a safe default is used: return false if the
@@ -1314,13 +1314,13 @@ connection options.
     //
     // A CheckOrigin function should carefully validate the request origin to
     // prevent cross-site request forgery.</span>
-    <span id="Upgrader.CheckOrigin">CheckOrigin</span> func(r *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>) <a href="//godoc.org/builtin#bool">bool</a>
+    <span id="Upgrader.CheckOrigin">CheckOrigin</span> func(r *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>) <a href="/golang.org/pkg/builtin#bool">bool</a>
 
     <span class="com">// EnableCompression specify if the server should attempt to negotiate per
     // message compression (RFC 7692). Setting this value to true does not
     // guarantee that compression will be supported. Currently only &#34;no context
     // takeover&#34; modes are supported.</span>
-    <span id="Upgrader.EnableCompression">EnableCompression</span> <a href="//godoc.org/builtin#bool">bool</a>
+    <span id="Upgrader.EnableCompression">EnableCompression</span> <a href="/golang.org/pkg/builtin#bool">bool</a>
 }</pre>
 </div>
 <p data-zhpect-trans="jr8FrHh">Upgrader specifies parameters for upgrading an HTTP connection to a
@@ -1333,7 +1333,7 @@ WebSocket connection.
 </h4>
 <div class="funcdecl decl">
     <a title="View Source" href="//github.com/gorilla/websocket/blob/master/server.go#L123">❖</a>
-    <pre>func (u *<a href="#Upgrader">Upgrader</a>) Upgrade(w <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#ResponseWriter">ResponseWriter</a>, r *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>, responseHeader <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Header">Header</a>) (*<a href="#Conn">Conn</a>, <a href="//godoc.org/builtin#error">error</a>)</pre>
+    <pre>func (u *<a href="#Upgrader">Upgrader</a>) Upgrade(w <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#ResponseWriter">ResponseWriter</a>, r *<a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Request">Request</a>, responseHeader <a href="//godoc.org/net/http">http</a>.<a href="//godoc.org/net/http#Header">Header</a>) (*<a href="#Conn">Conn</a>, <a href="/golang.org/pkg/builtin#error">error</a>)</pre>
 </div>
 <p data-zhpect-trans="3wkQzn8">Upgrade upgrades the HTTP server connection to the WebSocket protocol.</p>
 <p data-zhpect-trans="gWqxm2Z">The responseHeader is included in the response to the client&#39;s upgrade
