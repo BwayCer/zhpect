@@ -32,6 +32,7 @@ defaultContentLanguageInSubdir        : false
 enableMissingTranslationPlaceholders  : false
 
 relativeURLs : true
+disablePathToLower: true
 
 
 ## 主題預設值
