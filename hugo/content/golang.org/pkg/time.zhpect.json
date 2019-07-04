@@ -1,0 +1,20 @@
+{
+    "_defaultOther": ["zh_TW"],
+    "zh_TW": {
+        "jPARzvS": "對於使用 Time.Format 和 time.Parse 有預定義的 layout。 其 layout 式的表示使用的參考時間是特定時間：",
+        "kUQDCYe": "這是 Unix 時間 1136239445。 由於 MST 是 GMT-0700，其參考時間可以被認為是",
+        "YnEnCZc": "// RFC822 使用數字的時區",
+        "sJEkASY": "// RFC1123 使用數字的時區",
+        "PfPFtDb": "// 方便的時間戳",
+        "hAAtUnM": "如果 name 為 \"\" 或 \"UTC\"，則 LoadLocation 回傳 UTC。 如果 name 為 \"Local\" ，則 LoadLocation 回傳 Local。",
+        "nJMkvKc": "否則，該 name 將被視為符合 IANA 時區資料庫中位置名稱的文件，例如 \"America/New_York\"。",
+        "qCTHygL": "Date 返回 Time 相當於",
+        "VJUAnUp": "month, day, hour, min, sec 和 nsec 值可能超出其通常範圍並將在轉換期間進行標準化。 例如： 10月32日轉換為 11月1日。",
+        "ELnaMEv": "如果 loc 為 nil，則 Date 會 panics。",
+        "jJcnpFQ": "返回當前的本地時間。",
+        "PYphNNt": "Parse 解析格式化的文字並返回其表示的時間值。 layout 是藉由參考時間來定義格式，定義為",
+        "WYhnUvY": "Format 是根據 layout 格式化，返回的以文字表示的時間值，layout 是藉由參考時間來定義格式，定義為",
+        "anQgdnN": "回傳同一時刻的 t 副本，但把副本的位置信息設置為 loc 以供顯示。",
+        "GVuSsTg": "如果 loc 為 nil，則 panics。"
+    }
+}
