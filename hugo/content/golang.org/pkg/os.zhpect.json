@@ -1,0 +1,20 @@
+{
+    "_defaultOther": ["zh_TW"],
+    "zh_TW": {
+        "JcCTcPH": "// 必須指定 O_RDONLY, O_WRONLY 或 O_RDWR 其中的一個。",
+        "PTxBmws": "// 以只讀打開文件。",
+        "jCEmPwy": "// 以只寫打開文件。",
+        "KmPwFxK": "// 以讀寫打開文件。",
+        "kJKsYFA": "// 如果不存在則創建一個新文件。",
+        "gTbMDyd": "// 與 O_CREATE 一起使用，文件必須不存在。",
+        "pQCaXVG": "// 打開同步 I/O。",
+        "fNGtJYq": "// seek 相對於文件的起點",
+        "mMpgXWF": "// seek 相對於當前偏移量",
+        "ejrYCqY": "// seek 相對於結尾",
+        "MzCYeGN": "Write 把 len(b) 字節寫入文件。 它返回寫入的字節數和錯誤（如果有）。 當 n != len(b) 時，Write 返回非 nil 的錯誤。",
+        "cRTTDym": "WriteAt 把 len(b) 字節從 off 字節偏移位置寫入文件。 它返回寫入的字節數和錯誤（如果有）。 當 n != len(b) 時，Write 返回非 nil 的錯誤。",
+        "cgGHDzL": "WriteString 類似於 Write，但寫入的內容為 string s 而不是 []bytes。",
+        "CCgHeaV": "PathError 記錄導致它的錯誤、操作和文件路徑。",
+        "bbaBbfb": "Timeout 報告當前錯誤是否表示超時。"
+    }
+}
