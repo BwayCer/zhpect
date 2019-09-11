@@ -1,0 +1,11 @@
+{
+    "_defaultOther": ["zh_TW"],
+    "zh_TW": {
+        "fEzFBfQ": "RWMutex 是讀/寫的互斥鎖 (mutual exclusion lock)。 鎖可以由任意數量的讀取者或單個寫入者所持有。 RWMutex 的零值是 unlocked mutex。",
+        "PMreWDk": "如果goroutine持有RWMutex進行讀取而另一個goroutine可能會調用Lock，那麼在釋放初始讀鎖之前，goroutine不應該期望能夠獲取讀鎖定。 特別是，這禁止遞歸讀鎖定。 這是為了確保鎖最終變得可用; 阻止的鎖定呼叫會阻止新讀者獲取鎖定。",
+        "JdDUWBB": "// 包含有被過濾掉或未導出的字段",
+        "EBdgMmN": "Lock 鎖定用於寫入。 如果鎖已經鎖定以進行讀取或寫入，則鎖定將鎖定，直到鎖定可用",
+        "YcQYEyf": ""
+    }
+}
+
