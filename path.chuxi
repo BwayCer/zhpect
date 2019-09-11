@@ -12,6 +12,7 @@
 /
 /pkg/
 /pkg/builtin/
+/pkg/os/
 /pkg/regexp/
 /pkg/text/template/
 
