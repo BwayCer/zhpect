@@ -1,5 +1,5 @@
 {
-    "_defaultOther": ["zh_G"],
+    "_defaultOther": ["zh_G", "zh_TW"],
     "zh_G": {
         "u9EUTvJ": "概觀",
         "rJkH84t": "指數",
@@ -60,5 +60,10 @@
         "WZGCBAr": "uint64是所有無符號64位整數的集合。範圍：0到18446744073709551615。",
         "MWpa4yG": "uint8是所有無符號8位整數的集合。範圍：0到255。",
         "meruGmu": "uintptr是一個整數類型，足以容納任何指針的位模式。"
+    },
+    "zh_TW": {
+        "RTq9mLf": "make 是分配並初始化 slice, map 或 chan (only) 類型的對象的內置函數。 像 new 一樣，第一個參數是類型而不是值。 與 new 不同，make 的回傳的類型與其參數的類型相同，而不是指針 (pointer)。 其格式的結果取決於類型：",
+        "BXhwAdj": "Slice: size 指定長度。 slice 的容量等於其長度。 可以提供第二整數參數用以指定不同的容量； 其值必須不小於長度。\n例如： make([]int, 0, 10) 分配一個大小為 10 的底層 array，並返回一個長度為 0 的 slice 和由此底層 array 支持的容量 10。\nMap: 一個空 map 被分配足夠的空間以容納被指定的元素數量。 size 可以省略，在這種情況下會分配較小的起始大小。\nChannel: 使用指定的緩衝區容量初始化 channel 的緩衝區 (buffer)。 如果為 0，或者省略了 size，則 channel 是無緩衝的。",
+        "YJ87DPC": "new 是分配內存的內置函數。 第一個參數是類型而不是值，並且其回傳值是新分配的該類型零值的指針 (pointer)。"
     }
 }
